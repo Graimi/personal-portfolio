@@ -4,20 +4,53 @@
     <meta charset="UTF-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&family=Roboto+Condensed:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Portfolio</title>
   </head>
   <body>
     <div id="app" class="glass">
       <header>
-        <div>Jaime</div>
+        <div class="profile">
+          <img src="./jaime_2.jpeg" alt="profile" />
+          <h3>
+            Jaime <br />
+            Flores Lujan
+          </h3>
+        </div>
         <nav>
-          <h2>Inicio</h2>
-          <h2>Proyectos</h2>
-          <h2>Formación</h2>
+          <ul>
+            <li>
+              <a href="#home" class="nav_item">
+                <img src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1682696577/Portfolio/medium_xdghcn.png" alt="home" class="nav_image" />
+                <h2>Inicio</h2>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#proyects" class="nav_item"
+                ><img src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1682696577/Portfolio/proyectos_wp0byt.png" alt="home" class="nav_image" />
+                <h2>Proyectos</h2>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#learning" class="nav_item"
+                ><img src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1682696577/Portfolio/formacion_ekv5vs.png" alt="home" class="nav_image" />
+                <h2>Formación</h2>
+              </a>
+            </li>
+          </ul>
         </nav>
-        <footer>Footer</footer>
+        <footer class="footer"><h3>Footer</h3></footer>
       </header>
-      <main>Main</main>
+      <main><h1>Inicio</h1></main>
       <!-- <footer>Footer</footer> -->
     </div>
     <script type="module" src="/app.js"></script>
