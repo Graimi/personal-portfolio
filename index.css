@@ -95,10 +95,11 @@ body {
   /* Centramos el contenido del body */
   display: flex;
   align-items: center;
+  justify-content: center;
   /* Establecemos el background y le damos estilos */
   background-image: url(https://res.cloudinary.com/dwsffp1eq/image/upload/v1682619324/Portfolio/mapa_topogr%C3%A1fico_szmnvw.svg);
   background-size: cover;
-  /* background-position: 100%; */
+  background-position: 50% 50%;
   background-attachment: fixed;
 }
 
@@ -120,6 +121,40 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.glass {
+  /* Color del mapa */
+  /* background: #ECE0C6;  */
+  min-height: 80vh;
+  width: 80%;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  /* z-index: 2; */
+  backdrop-filter: blur(10px);
+  display: flex;
+}
+
+
+
+header {
+  width: 20%;
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
