@@ -1,14 +1,12 @@
+import Title from '../../components/Title/Title';
+
 function Inicio() {
   return `
-    <main>
-      <h1>Mis proyectos</h1>
-      <ul>
-        <li>Proyecto 1</li>
-        <li>Proyecto 2</li>
-        <li>Proyecto 3</li>
-      </ul>
-      </main>
-      `;
+  <main>
+    ${Title('Bienvenido a mi sitio web')}
+    <p>Este es el contenido de la página de inicio</p>
+    </main>
+    `;
 }
 
 export default Inicio;

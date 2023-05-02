@@ -1,7 +1,9 @@
+import Title from '../../components/Title/Title';
+
 function Proyectos() {
   return `
   <main>
-    <h1>Mis proyectos</h1>
+    ${Title('Mis proyectos')}
     <ul>
       <li>Proyecto 1</li>
       <li>Proyecto 2</li>
