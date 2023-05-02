@@ -9,7 +9,7 @@ function Experiencia() {
       <li>Experiencia 2</li>
       <li>Experiencia 3</li>
     </ul>
-    </main>
+  </main>
     `;
 }
 

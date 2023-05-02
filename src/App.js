@@ -4,25 +4,19 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 
 function App() {
-  // Obtener el elemento con id "app"
+  // Obtenemos el elemento app
   const app = document.getElementById('app');
 
-  app.innerHTML += Header();
-  // app.innerHTML += Main();
-  app.appendChild(Main());
-
-  //   function loadContent() {
-  //     app.innerHTML = Header();
-  //     // app.innerHTML += Main();
-  //     app.appendChild(Main());
-  //   }
-
-  //   // Llamar loadContent al cargar la página
-  //   loadContent();
-
-  //   // Escuchar los cambios de URL y llamar loadContent
-  //   window.addEventListener('hashchange', loadContent);
+  // Al establecer el signo igual sin más provocamos que se reinicia la página cuando recargamos
+  // evitando de esta manera que se colapse la app sumándose contenido
+  app.innerHTML = Header();
+  app.innerHTML += Main();
 }
 
+// Llamar loadContent al cargar la página
+App();
+
+// Escuchamos los cambios de la URL y llamamos a la función app para recargar la página
+window.addEventListener('hashchange', App);
+
 export default App;
-// window.addEventListener('popstate', Main);
