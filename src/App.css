@@ -1,0 +1,11 @@
+.glass {
+    /* Distribuimos el header y main */
+    display: flex;
+    /* Damos las medidas que queremos que tenga la app */
+    min-height: 80vh;
+    width: 80%;
+    background: var(--pf-gradient-white);
+    border-radius: var(--pf-radius-container);
+    /* Obtenemos el efecto glass con esta propiedad */
+    backdrop-filter: blur(10px);
+  }
