@@ -180,27 +180,11 @@ header {
   align-items: center;
   justify-content: space-between;
   text-align: center;
-  width: 220px;
+  width: 235px;
   padding: var(--pf-padding-container);
   background: var(--pf-gradient-white);
   border-radius: var(--pf-radius-container);
   backdrop-filter: blur(1px);
-}
-
-.profile {
-  /* height: 15%; */
-  /* gap: 5px; */
-}
-
-.profile img {
-  margin: auto;
-  width: 50%;
-  border-radius: var(--pf-radius-img);
-}
-
-.profile h3 {
-  /* Metemos un poco de espacio para alinear con el main */
-  padding-top: 10px;
 }
 
 nav {
@@ -216,7 +200,7 @@ nav ul {
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 
 .nav_image {

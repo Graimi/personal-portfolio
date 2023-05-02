@@ -17,7 +17,6 @@ function Footer(rs1, rs2, rs3, rs4) {
             <img src=${rs4.src} alt=${rs4.alt} />
           </a>
         </article>
-        <div className="circleDecoration" />
       </footer>
     ;`;
 }

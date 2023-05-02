@@ -1,0 +1,11 @@
+/* Estilamos y centramos la img */
+.profile img {
+  margin: auto;
+  width: 50%;
+  border-radius: var(--pf-radius-img);
+}
+
+.profile h3 {
+  /* Metemos un poco de espacio para alinear con el main */
+  padding-top: 10px;
+}
