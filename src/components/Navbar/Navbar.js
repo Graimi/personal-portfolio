@@ -1,3 +1,5 @@
+import './Navbar.css';
+
 function Navbar({ sct1, sct2, sct3, sct4 }) {
   return `<nav>
     <ul>

@@ -187,30 +187,6 @@ header {
   backdrop-filter: blur(1px);
 }
 
-nav {
-  text-align: center;
-}
-
-nav ul {
-  padding: 0;
-}
-
-.nav_item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  text-decoration: none;
-  padding-bottom: 25px;
-}
-
-.nav_image {
-  width: 15%;
-}
-
-.nav_item h2 {
-  padding-left: 15px;
-}
-
 /* Damos los estilos generales para desplegar correctamente los elementos */
 .rrss {
   display: flex;

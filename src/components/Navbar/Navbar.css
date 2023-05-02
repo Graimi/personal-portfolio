@@ -1,0 +1,27 @@
+nav {
+  text-align: center;
+}
+
+/* Con esta propiedad fijamos los nav a la izquierda */
+nav ul {
+  padding: 0;
+}
+
+/* Distribuimos correctamente y espaciamos los nav */
+.nav_item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  padding-bottom: 25px;
+}
+
+/* Damos tamaño a los logos */
+.nav_image {
+  width: 15%;
+}
+
+/* Damos espacio entre los logos y el texto */
+.nav_item h2 {
+  padding-left: 15px;
+}
