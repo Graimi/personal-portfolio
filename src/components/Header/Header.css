@@ -1,0 +1,14 @@
+header {
+    /* Centramos y distribuímos los diferentes elementos que compondrán el header */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    /* Fijamos un width en el que quepa el contenido */
+    width: 235px;
+    /* Estilamos el visual */
+    padding: var(--pf-padding-container);
+    background: var(--pf-gradient-white);
+    border-radius: var(--pf-radius-container);
+  }
