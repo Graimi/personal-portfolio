@@ -23,5 +23,5 @@ nav ul {
 
 /* Damos espacio entre los logos y el texto */
 .nav_item h2 {
-  padding-left: 15px;
+  padding-left: var(--pf-padding-list);
 }

@@ -1,3 +1,4 @@
+import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import Profile from '../Profile/Profile';
 
@@ -28,11 +29,41 @@ function Header() {
     name: 'Formación'
   };
 
+  // Declaramos las variables para usar en el footer
+  const rs1 = {
+    href: 'https://github.com/Graimi',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1679591861/NASA/github_qlykzr.png',
+    alt: 'Github'
+  };
+  const rs2 = {
+    href: 'https://www.linkedin.com/in/floreslujan/',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1679591861/NASA/linkedin_gbpe7u.png',
+    alt: 'Linkedin'
+  };
+  const rs3 = {
+    href: 'https://api.whatsapp.com/send?phone=34638560723',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1682880331/Portfolio/whatsapp_pfickm.png',
+    alt: 'WhatsApp'
+  };
+  const rs4 = {
+    href: 'mailto:jaimefloreslujan@gmail.com',
+    target: '_blank',
+    rel: 'noopener noreferrer',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1679591861/NASA/email_bgpahe.png',
+    alt: 'email'
+  };
+
   // Añadimos las composiciones del header
   return `<header>
   ${Profile('./jaime_2.jpeg', 'Jaime <br/> Flores Lujan')}
   ${Navbar({ sct1, sct2, sct3, sct4 })}
-
+  ${Footer({ rs1, rs2, rs3, rs4 })}
   </header>`;
 }
 

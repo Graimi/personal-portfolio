@@ -1,9 +1,9 @@
-import './style.css';
+import './Footer.css';
 
-function Footer(rs1, rs2, rs3, rs4) {
+function Footer({ rs1, rs2, rs3, rs4 }) {
   return `
-      <footer className="rrss">
-        <article className="rrss-logos">
+        <footer class="rrss">
+          <article class="rrss-logos">
           <a href=${rs1.href} target=${rs1.target} rel=${rs1.rel}>
             <img src=${rs1.src} alt=${rs1.alt} />
           </a>
@@ -18,7 +18,7 @@ function Footer(rs1, rs2, rs3, rs4) {
           </a>
         </article>
       </footer>
-    ;`;
+    `;
 }
 
 export default Footer;

@@ -38,6 +38,8 @@
   /* PADDING 🟡*/
   --pf-padding-container: 30px;
   --pf-padding-card: 30px;
+  /* Ver si hay más de uno */
+  --pf-padding-list: 15px;
 
   /* GAP 🔴*/
   --pf-gap-header: 16px;
@@ -185,42 +187,6 @@ header {
   background: var(--pf-gradient-white);
   border-radius: var(--pf-radius-container);
   backdrop-filter: blur(1px);
-}
-
-/* Damos los estilos generales para desplegar correctamente los elementos */
-.rrss {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  height: 10%;
-}
-
-/* Estilos para alinear los iconos de las rrss con sus respectivos enlaces */
-.rrss-logos {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: fit-content;
-  height: 50px;
-  background-color: var(--pf-color-brown-dark);
-  background: var(--pf-gradient-brown);
-  border-radius: var(--pf-radius-card);
-}
-
-/* Estilamos los iconos de contacto del footer */
-.rrss-logos a {
-  width: 15%;
-  border-radius: var(--pf-radius-img);
-  transition: all 0.25s ease-in;
-}
-
-.rrss-logos a img {
-  filter: hue-rotate(180deg);
-  /* filter: grayscale(100%) brightness(1000%); */
-}
-.rrss-logos a:hover {
-  /* Damos el efecto para que crezcan los iconos */
-  transform: scale(1.05);
 }
 
 main {
