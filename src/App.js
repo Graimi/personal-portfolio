@@ -8,7 +8,21 @@ function App() {
   const app = document.getElementById('app');
 
   app.innerHTML += Header();
-  app.innerHTML += Main();
+  // app.innerHTML += Main();
+  app.appendChild(Main());
+
+  //   function loadContent() {
+  //     app.innerHTML = Header();
+  //     // app.innerHTML += Main();
+  //     app.appendChild(Main());
+  //   }
+
+  //   // Llamar loadContent al cargar la página
+  //   loadContent();
+
+  //   // Escuchar los cambios de URL y llamar loadContent
+  //   window.addEventListener('hashchange', loadContent);
 }
 
 export default App;
+// window.addEventListener('popstate', Main);
