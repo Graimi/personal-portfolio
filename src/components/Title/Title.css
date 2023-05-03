@@ -1,12 +1,11 @@
-/* Con la siguiente propiedad haremos dinámico el siguiente contenido */
 .page-title {
+  /* Con la siguiente propiedad haremos dinámico el contenido del componente*/
   width: fit-content;
+  padding-bottom: var(--pf-padding-container);
 }
 
 /* Estilamos la barra de decoración que subraya el título */
 .decoration {
-  /* Con lo siguiente hacemos dinámico el efecto de subrayado */
-  width: 130%;
   background: var(--pf-gradient-brown);
   border: none;
   border-radius: var(--pf-radius-card);

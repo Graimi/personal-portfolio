@@ -1,6 +1,117 @@
-/* .grid-fluid {
+.grid-fluid {
     margin: 16px auto;
     max-width: 90%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-} */
+}
+
+.proyect_img {
+    width: 30%;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    position: relative;
+    outline: 2px solid var(--pf-color-brown-light);
+    /* border-radius: 8px; */
+    border-radius: var(--pf-radius-card);
+     /* var(--pf-gradient-brown); */
+    /* line-height: 150%; */
+    padding: 16px;
+    background: var(--pf-color-beige);
+    /* background-blend-mode: multiply; */
+    /* background: var(--pf-gradient-beige); */
+    transition: background-color 1s ease-in-out;
+    overflow: hidden;
+  }
+  
+  .card-front {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 15px; /* Espaciado entre elementos */
+    /* top: 50%;
+    transform: translateY(-50%); */
+    left: 0;
+    
+    position: absolute;
+    /* padding: 10px; */
+    width: 100%;
+    text-align: center;
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  }
+
+  .img {
+    border-radius: var(--pf-radius-img);
+    width: 80%;
+    height: 100px;
+  }
+
+  .technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 16px;
+  }
+
+  .technologies img {
+    width: 18%;
+  }
+
+  .arrow {
+    display: flex;
+    align-items: flex-end;
+    /* position: absolute;
+    bottom: 16px;
+    right: 16px; */
+    position:relative;
+    width: 15%;
+    padding-top: 5px;
+    /* left: 0; */
+    /* right: 16px; */
+    /* bottom: 0px; */
+
+    /* position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;*/
+    /* display: flex;
+    justify-content: center;
+    align-items: center;  */
+  }
+
+   .card-back {
+    transform: translateX(120%);
+    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    /* overflow: scroll; */
+  }
+  
+  .card-back img {
+    width: 15%;
+    height: 15%;
+  }
+  
+  /*Text*/
+  .title {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  /*Hover*/
+  .card:hover .card-front {
+    /* Damos un efecto extra al añadir ese 15% */
+    transform: translateX(-115%);
+  }
+  
+  .card:hover .card-back {
+    transform: translateX(0);
+  }
+  
+  
+  

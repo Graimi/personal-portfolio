@@ -1,12 +1,13 @@
 :root {
   /* COLOR PALETTE 🟢*/
+  --pf-color-beige: #ece0c6;
   --pf-color-brown-light: #b6a582;
   --pf-color-brown-medium: #8d6453;
   --pf-color-brown-dark: #684638;
-  --pf-color-beige: #ece0c6;
 
   /* GRADIENTS 🟢*/
   --pf-gradient-white: linear-gradient(to right bottom, #ffffffb3, #ffffff4d);
+  --pf-gradient-beige: linear-gradient(to right bottom, #ffffffb3, var(--pf-color-beige));
   --pf-gradient-brown:linear-gradient(to right bottom, var(--pf-color-beige), var(--pf-color-brown-light));
 
   /* BORDER COLOR 🔴*/
@@ -40,6 +41,7 @@
   --pf-padding-card: 30px;
   /* Ver si hay más de uno */
   --pf-padding-list: 15px;
+  --pf-padding-title: 15px;
 
   /* GAP 🔴*/
   --pf-gap-header: 16px;
@@ -53,8 +55,8 @@
 
   /* BORDER RADIUS 🟡*/
   --pf-radius-container: 32px;
-  --pf-radius-card: 30px;
-  --pf-radius-img: 80px;
+  --pf-radius-card: 20px;
+  --pf-radius-img: 5px;
   --pf-radius-button: 80px;
 }
 
@@ -166,6 +168,13 @@ textarea,
 select {
   font: inherit;
 }
+
+
+.glass {
+  flex-direction: row-reverse;
+  
+}
+
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {

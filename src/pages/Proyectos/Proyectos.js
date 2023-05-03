@@ -1,3 +1,5 @@
+import './Proyectos.css';
+
 import Title from '../../components/Title/Title';
 
 function Proyectos() {
