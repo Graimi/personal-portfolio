@@ -1,120 +1,94 @@
+/* Las diferentes cards de proyectos se alinearan con la siguiente configuración */
 .grid-fluid {
-    margin: 16px auto;
-    max-width: 90%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin: 16px auto;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
-.proyect_img {
-    width: 30%;
-}
-
+/* Establecemos los estilos que tendrán en común las cards */
 .card {
-    width: 200px;
-    height: 300px;
-    position: relative;
-    outline: 2px solid var(--pf-color-brown-light);
-    /* border-radius: 8px; */
-    border-radius: var(--pf-radius-card);
-     /* var(--pf-gradient-brown); */
-    /* line-height: 150%; */
-    padding: 16px;
-    background: var(--pf-color-beige);
-    /* background-blend-mode: multiply; */
-    /* background: var(--pf-gradient-beige); */
-    transition: background-color 1s ease-in-out;
-    overflow: hidden;
-  }
-  
-  .card-front {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    align-items: center;
-    gap: 15px; /* Espaciado entre elementos */
-    /* top: 50%;
-    transform: translateY(-50%); */
-    left: 0;
-    
-    position: absolute;
-    /* padding: 10px; */
-    width: 100%;
-    text-align: center;
-    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+  position: relative;
+  /* Establecemos unas medidas que permitan ver todo el contenido */
+  width: 210px;
+  height: 300px;
+  outline: 2px solid var(--pf-color-brown-light);
+  border-radius: var(--pf-radius-card);
+  padding: 16px;
+  background: var(--pf-color-beige);
+  /* Ocultamos para que solo se vea una de las caras */
+  overflow: hidden;
+}
+
+.card-front {
+  /* Hemos usado absolute para posicionar correctamente la card, 
+  usar esta propiedad implica retocar correctamente todo, no vale con el flex*/
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  /* Con esta propiedad evitamos que se descentre el contenido */
+  left: 0;
+  /* Establecemos el efecto */
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/* Mentenemos los estilos del h pero le aplicamos un bold para dar más importancia*/
+.title {
+  font-weight: bold;
+}
+
+/* Establecemos las propiedades de la img del proyecto */
+.img {
+  border-radius: var(--pf-radius-img);
+  width: 170px;
+  height: 100px;
+}
+
+/* Distribuimos eficientemente los logos de las tecnologías */
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+/* Establecemos el tamaños de los logos */
+.technologies img {
+  width: 18%;
+  height: 18%;
+}
+
+/* Hemos obtenido la flecha de Google Fonts, la cargamos con las propiedades que he decidido */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 200, 'opsz' 48;
+}
+
+/* Establecemos el efecto del hover para desplazar el contenido */
+.card:hover .card-front {
+    /* Damos un efecto extra al añadir ese 20% */
+    transform: translateX(-120%);
   }
 
-  .img {
-    border-radius: var(--pf-radius-img);
-    width: 80%;
-    height: 100px;
-  }
+/* Gestionamos los estilos de la parte back de la card, donde irá la descripción del proyecto */
+.card-back {
+    /* De base mantenemos la parte trasera del back con el translate para que no se vea */
+  transform: translateX(120%);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  text-align: justify;
+}
 
-  .technologies {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 0 16px;
-  }
+/* Damos las propiedades al logo de github */
+.card-back img {
+  width: 15%;
+  height: 15%;
+  padding-top: 10px;
+}
 
-  .technologies img {
-    width: 18%;
-    height: 18%;
-  }
-
-  .arrow {
-    display: flex;
-    align-items: flex-end;
-    /* position: absolute;
-    bottom: 16px;
-    right: 16px; */
-    position:relative;
-    width: 15%;
-    padding-top: 5px;
-    /* left: 0; */
-    /* right: 16px; */
-    /* bottom: 0px; */
-
-    /* position: absolute;
-    background: var(--primary-color);
-    padding: 0.4rem;
-    border-top-left-radius: var(--border-radius);
-    border-bottom-right-radius: var(--border-radius);
-    bottom: 0;
-    right: 0;*/
-    /* display: flex;
-    justify-content: center;
-    align-items: center;  */
-  }
-
-   .card-back {
-    transform: translateX(120%);
-    transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
-    text-align: justify;
-  }
-  
-  .card-back img {
-    width: 15%;
-    height: 15%;    
-    padding-top: 10px;
-  }
-  
-  /*Text*/
-  .title {
-    font-size: 1.3rem;
-    font-weight: bold;
-  }
-  
-  /*Hover*/
-  .card:hover .card-front {
-    /* Damos un efecto extra al añadir ese 15% */
-    transform: translateX(-115%);
-  }
-  
-  .card:hover .card-back {
-    transform: translateX(0);
-  }
-  
-  
-  
+/* Establecemos el efecto del hover para regresar el contenido desplazado */
+.card:hover .card-back {
+  transform: translateX(0);
+}

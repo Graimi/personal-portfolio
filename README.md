@@ -51,20 +51,9 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 ## Pasos
 <ol>
 <li> [] General </li>
-[] Checar las cards de proyectos, ver si hacer mas anchas o largas cuando se han las medias queries <br>
 [] Carpetas organizadas <br>
 [] Componentes separados <br>
 [] Código comentado <br>
-
-<li> [] JAVASCRIPT </li>
-[✅] Header <br>
-[✅] Footer <br>
-[] Main <br>
-[] Inicio <br>
-[] Proyectos <br>
-[] Experiencia <br>
-[] Formación <br>
-[✅] SPA routed <br>
 
 <li> [] HTML </li>
 [] Metadatos <br>
@@ -81,4 +70,18 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [] root limpio <br>
 [] Propiedades de acuerdo al root <br>
 </ol>
+
+<li> [] JAVASCRIPT </li>
+[✅] Header <br>
+[✅] Footer <br>
+[] Main <br>
+[] Inicio <br>
+[] Proyectos <br>
+[] Experiencia <br>
+[] Formación <br>
+[✅] SPA routed <br>
+
+<li> [] Proyectos </li>
+[] Checar las cards de proyectos, ver si hacer mas anchas o largas cuando se han las medias queries <br>
+[] El título del proyecto en h2 o h3 <br>
 <br>
