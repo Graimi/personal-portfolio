@@ -51,15 +51,34 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 ## Pasos
 <ol>
 <li> [] General </li>
-[] <br>
+[] Checar las cards de proyectos, ver si hacer mas anchas o largas cuando se han las medias queries <br>
+[] Carpetas organizadas <br>
+[] Componentes separados <br>
+[] Código comentado <br>
 
 <li> [] JAVASCRIPT </li>
-[] <br>
+[✅] Header <br>
+[✅] Footer <br>
+[] Main <br>
+[] Inicio <br>
+[] Proyectos <br>
+[] Experiencia <br>
+[] Formación <br>
+[✅] SPA routed <br>
 
 <li> [] HTML </li>
-[] <br>
+[] Metadatos <br>
+[] Código redactado en JS <br>
 
 <li> [] CSS </li>
-[] <br>
+[✅] Header <br>
+[✅] Footer <br>
+[] Main <br>
+[] Inicio <br>
+[] Proyectos <br>
+[] Experiencia <br>
+[] Formación <br>
+[] root limpio <br>
+[] Propiedades de acuerdo al root <br>
 </ol>
 <br>

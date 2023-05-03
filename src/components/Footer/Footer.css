@@ -25,11 +25,6 @@
   transition: all 0.25s ease-in;
 }
 
-/* Estamos reutilizando img de otro proyecto, les damos el color que buscamos */
-.rrss-logos a img {
-  filter: hue-rotate(180deg);
-}
-
 /* Damos el efecto para que crezcan los iconos */
 .rrss-logos a:hover {
   transform: scale(1.05);

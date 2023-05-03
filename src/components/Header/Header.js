@@ -35,28 +35,28 @@ function Header() {
     href: 'https://github.com/Graimi',
     target: '_blank',
     rel: 'noopener noreferrer',
-    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1679591861/NASA/github_qlykzr.png',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118881/Portfolio/github_ejpjmn.png',
     alt: 'Github'
   };
   const rs2 = {
     href: 'https://www.linkedin.com/in/floreslujan/',
     target: '_blank',
     rel: 'noopener noreferrer',
-    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1679591861/NASA/linkedin_gbpe7u.png',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118881/Portfolio/linkedin_ffygrj.png',
     alt: 'Linkedin'
   };
   const rs3 = {
     href: 'https://api.whatsapp.com/send?phone=34638560723',
     target: '_blank',
     rel: 'noopener noreferrer',
-    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1682880331/Portfolio/whatsapp_pfickm.png',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118728/Portfolio/whatsapp_odf3jg.png',
     alt: 'WhatsApp'
   };
   const rs4 = {
     href: 'mailto:jaimefloreslujan@gmail.com',
     target: '_blank',
     rel: 'noopener noreferrer',
-    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1679591861/NASA/email_bgpahe.png',
+    src: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118729/Portfolio/email_ap67gs.png',
     alt: 'email'
   };
 
