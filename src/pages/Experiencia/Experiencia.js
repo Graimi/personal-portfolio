@@ -1,3 +1,5 @@
+import './Experiencia.css';
+
 import Title from '../../components/Title/Title';
 
 function Experiencia() {

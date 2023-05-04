@@ -62,19 +62,20 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 <li> [] CSS </li>
 [✅] Header <br>
 [✅] Footer <br>
-[] Main <br>
+[✅] Main <br>
 [] Inicio <br>
-[] Proyectos <br>
+[✅] Proyectos <br>
 [] Experiencia <br>
 [] Formación <br>
 [] root limpio <br>
 [] Propiedades de acuerdo al root <br>
+[] Medias queries <br>
 </ol>
 
 <li> [] JAVASCRIPT </li>
 [✅] Header <br>
 [✅] Footer <br>
-[] Main <br>
+[✅] Main <br>
 [] Inicio <br>
 [] Proyectos <br>
 [] Experiencia <br>

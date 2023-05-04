@@ -5,6 +5,7 @@ function Inicio() {
   <main>
     ${Title('Bienvenido a mi sitio web')}
     <p>Este es el contenido de la página de inicio</p>
+    Emprendimiento
     </main>
     `;
 }
