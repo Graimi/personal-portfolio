@@ -1,93 +1,36 @@
-/* .experience-grid-fluid {
-  display: flex ;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: var(--pf-gap-card);
-}
-
-.experience {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  height: auto;
-  outline: 2px solid var(--pf-color-brown-light);
-  border-radius: var(--pf-radius-card);
-  padding: 16px;
-  background: var(--pf-color-beige);
-  gap: 10px;
-  overflow: auto;
-}
-
-.experience-logo {
-  width: 70px;
-  height: auto;
-  border-radius: 5px;
-  grid-area: logo;
-  justify-content: center;
-}
-
-.experience-empresa {
-  grid-area: empresa;
-}
-
-.experience-info {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 10px;
-}
-
-.experience-company {
-  grid-area: company;
-}
-
-.experience-location {
-  grid-area: location;
-}
-
-.experience-job {
-  grid-area: job;
-}
-
-.experience-date {
-  grid-area: date;
-}
-
-.experience-description {
-  grid-area: description;
-}
-*/
-
+/* Establecemos los estilos para desplegar correctamente las cards y que se adapten correctamente */
 .experience-grid-fluid {
-  display: grid ;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 0.6fr));
-  gap: var(--pf-gap-card);
+  gap: var(--pf-gap-grid);
 }
 
+/* Definimos las propiedades para crear un template basado en grid que se adapte al contenido dado */
 .experience {
   display: grid;
+  /* Estas propiedades auto son muy importantes */
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
-  gap: 10px 10px;
   grid-template-areas:
-    'logo empresa empresa'
+    'logo info info'
     'job job date'
     'description description description';
-  background: var(--pf-color-beige);
-  outline: 2px solid var(--pf-color-brown-light);
-  border-radius: var(--pf-radius-card);
-  padding: 20px;
   height: auto;
+  padding: var(--pf-padding-card);
+  gap: var(--pf-gap-card);
+  background: var(--pf-color-beige);
+  border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
+  border-radius: var(--pf-radius-card);
 }
 
+/* A continuación relacionamos los elementos del template grid */
 .experience-logo {
-  width: 70px;
   grid-area: logo;
-  align-self: center;
+  width: 80px;
 }
 
-.experience-empresa {
-  grid-area: empresa;
+.experience-company-info {
+  grid-area: info;
 }
 
 .experience-company {
@@ -108,4 +51,5 @@
 
 .experience-description {
   grid-area: description;
+  text-align: justify;
 }

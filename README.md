@@ -65,7 +65,7 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Main <br>
 [] Inicio <br>
 [✅] Proyectos <br>
-[] Experiencia <br>
+[✅] Experiencia <br>
 [] Formación <br>
 [] root limpio <br>
 [] Propiedades de acuerdo al root <br>

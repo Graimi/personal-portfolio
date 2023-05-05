@@ -8,7 +8,11 @@
   /* GRADIENTS 🟢*/
   --pf-gradient-white: linear-gradient(to right bottom, #ffffffb3, #ffffff4d);
   --pf-gradient-beige: linear-gradient(to right bottom, #ffffffb3, var(--pf-color-beige));
-  --pf-gradient-brown:linear-gradient(to right bottom, var(--pf-color-beige), var(--pf-color-brown-light));
+  --pf-gradient-brown: linear-gradient(
+    to right bottom,
+    var(--pf-color-beige),
+    var(--pf-color-brown-light)
+  );
 
   /* BORDER COLOR 🔴*/
   /* Determinar si hay
@@ -24,11 +28,10 @@
   --pf-typography-h3: 20px;
   --pf-typography-p: 16px;
 
-  /* LEADING 🟡*/
+  /* LEADING 🟢*/
   --pf-typography-h1-leading: 1.2;
   --pf-typography-h2-leading: 1.2;
   --pf-typography-h3-leading: 1.3;
-  /* Al añadir ps, ver si esta medida es buena */
   --pf-typography-p-leading: 1.5;
 
   /* MARGIN 🔴*/
@@ -38,26 +41,32 @@
 
   /* PADDING 🟡*/
   --pf-padding-container: 30px;
-  --pf-padding-card: 30px;
+  --pf-padding-card: 20px;
   /* Ver si hay más de uno */
   --pf-padding-list: 15px;
   --pf-padding-title: 15px;
 
   /* GAP 🔴*/
+  --pf-gap-grid: 20px;
+  --pf-gap-card: 10px;
+
+  /* Sin usar */
   --pf-gap-header: 16px;
   --pf-gap-cta: 12px;
   --pf-gap-hero: 32px;
   --pf-gap-customer: 32px;
   --pf-gap-feature: 32px;
-  --pf-gap-card: 20px;
   --pf-gap-pricing: 32px;
   --pf-gap-testimonial: 48px;
 
   /* BORDER RADIUS 🟡*/
-  --pf-radius-container: 32px;
+  /* --pf-radius-container: 32px; */
   --pf-radius-card: 20px;
-  --pf-radius-img: 5px;
-  --pf-radius-button: 80px;
+  /* --pf-radius-img: 5px; */
+  /* --pf-radius-button: 80px; */
+
+  /* BORDER WIDTH 🟡*/
+  --pf-border-width-card: 2px;
 }
 
 /* Box sizing rules */
@@ -169,12 +178,9 @@ select {
   font: inherit;
 }
 
-
 .glass {
   flex-direction: row-reverse;
-  
 }
-
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
