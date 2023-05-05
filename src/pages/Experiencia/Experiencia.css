@@ -26,20 +26,20 @@
 /* A continuación relacionamos los elementos del template grid */
 .experience-logo {
   grid-area: logo;
-  width: 80px;
+  /* width: 80px; */
 }
 
 .experience-company-info {
   grid-area: info;
 }
 
-.experience-company {
+/* .experience-company {
   grid-area: company;
-}
+} */
 
-.experience-location {
+/* .experience-location {
   grid-area: location;
-}
+} */
 
 .experience-job {
   grid-area: job;
