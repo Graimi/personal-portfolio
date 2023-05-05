@@ -1,5 +1,5 @@
 /* Las diferentes cards de proyectos se alinearan con la siguiente configuración */
-.grid-fluid {
+.proyect-grid-fluid {
   margin: 16px auto;
   max-width: 90%;
   display: grid;
@@ -7,7 +7,7 @@
 }
 
 /* Establecemos los estilos que tendrán en común las cards */
-.card {
+.proyect {
   position: relative;
   /* Establecemos unas medidas que permitan ver todo el contenido */
   width: 210px;
@@ -20,7 +20,7 @@
   overflow: hidden;
 }
 
-.card-front {
+.proyect-front {
   /* Hemos usado absolute para posicionar correctamente la card, 
   usar esta propiedad implica retocar correctamente todo, no vale con el flex*/
   position: absolute;
@@ -35,19 +35,19 @@
 }
 
 /* Mentenemos los estilos del h pero le aplicamos un bold para dar más importancia*/
-.title {
+.proyect-title {
   font-weight: bold;
 }
 
 /* Establecemos las propiedades de la img del proyecto */
-.img {
+.proyect-img {
   border-radius: var(--pf-radius-img);
   width: 170px;
   height: 100px;
 }
 
 /* Distribuimos eficientemente los logos de las tecnologías */
-.technologies {
+.proyect-technologies {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,7 +57,7 @@
 }
 
 /* Establecemos el tamaños de los logos */
-.technologies img {
+.proyect-technologies img {
   width: 18%;
   height: 18%;
 }
@@ -68,13 +68,13 @@
 }
 
 /* Establecemos el efecto del hover para desplazar el contenido */
-.card:hover .card-front {
+.proyect:hover .proyect-front {
     /* Damos un efecto extra al añadir ese 20% */
     transform: translateX(-120%);
   }
 
 /* Gestionamos los estilos de la parte back de la card, donde irá la descripción del proyecto */
-.card-back {
+.proyect-back {
     /* De base mantenemos la parte trasera del back con el translate para que no se vea */
   transform: translateX(120%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -82,13 +82,13 @@
 }
 
 /* Damos las propiedades al logo de github */
-.card-back img {
+.proyect-back img {
   width: 15%;
   height: 15%;
   padding-top: 10px;
 }
 
 /* Establecemos el efecto del hover para regresar el contenido desplazado */
-.card:hover .card-back {
+.proyect:hover .proyect-back {
   transform: translateX(0);
 }

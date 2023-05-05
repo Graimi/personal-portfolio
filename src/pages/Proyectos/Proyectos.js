@@ -6,16 +6,16 @@ function Proyectos() {
   return `
   <main>
     ${Title('Mis proyectos')}
-    <section class="proyects grid-fluid">
-    <article class="card">
-      <div class="card-front">
-        <h2 class="title">App Nasa</h2>
+    <section class="proyect-grid-fluid">
+    <article class="proyect">
+      <div class="proyect-front">
+        <h2 class="proyect-title">App Nasa</h2>
         <img
-          class="img"
+          class="proyect-img"
           src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683122102/Portfolio/nasa_fx2byf.jpg"
           alt="NASA"
         />
-        <div class="technologies">
+        <div class="proyect-technologies">
           <img
             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683109409/Portfolio/html-5_f1rtom.png"
             alt=""
@@ -43,7 +43,7 @@ function Proyectos() {
         </div>
         <span class="material-symbols-outlined"> keyboard_double_arrow_right </span>
       </div>
-      <div class="card-back">
+      <div class="proyect-back">
         <p>
           Se ha creado una web que consume dos API’s oficiales de la NASA. 'APOD', para
           consultar la fotografía astronómica del día y 'Mars Rover Photos' para consultar las

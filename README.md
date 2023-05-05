@@ -60,13 +60,13 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [] Código redactado en JS <br>
 
 <li> [] CSS </li>
-[✅] Header <br>
+[] Header: Cambiar las propiedades necesarias para encajar el fit-content al width <br>
 [✅] Footer <br>
 [✅] Main <br>
 [] Inicio <br>
 [✅] Proyectos <br>
 [✅] Experiencia <br>
-[] Formación <br>
+[✅] Formación <br>
 [] root limpio <br>
 [] Propiedades de acuerdo al root <br>
 [] Medias queries <br>

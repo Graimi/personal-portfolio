@@ -2,9 +2,9 @@ import './Title.css';
 
 function Title(title) {
   return `
-    <div class="page-title">
+    <div class="title">
         <h1>${title}</h1>
-        <div class="decoration"><br /></div>
+        <div class="title-decoration"><br /></div>
     </div>
       `;
 }

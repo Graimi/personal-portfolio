@@ -6,7 +6,7 @@ header {
     justify-content: space-between;
     text-align: center;
     /* Fijamos un width en el que quepa el contenido */
-    width: 235px;
+    width: 280px;
     /* Estilamos el visual */
     padding: var(--pf-padding-container);
     background: var(--pf-gradient-white);
