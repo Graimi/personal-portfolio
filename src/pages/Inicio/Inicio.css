@@ -1,0 +1,81 @@
+.home-grid-fluid {
+  display: grid;
+  justify-content: space-around;
+  /* Estas propiedades auto son muy importantes */
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    'resume technologies languages'
+    'resume technologies more';
+  /* height: auto; */
+  text-align: center;
+  padding: var(--pf-padding-card);
+  gap: var(--pf-gap-card);
+  /* background: var(--pf-color-beige); */
+  /* border: var(--pf-border-width-card) solid var(--pf-color-brown-light); */
+  /* border-radius: var(--pf-radius-card); */
+}
+
+.home-resume {
+    grid-area: resume;
+}
+
+.home-resume-info {
+    width: 20%;
+}
+
+.home-technologies {
+    grid-area: technologies;
+}
+
+.home-technologies-logos {
+    width: 15%;
+}
+
+.home-languages {
+    grid-area: languages;
+}
+
+.home-languages-language {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.home-more {
+    grid-area: more;
+}
+
+.home-entrepreneur {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+      'img role'
+      'img date'
+      'remarkable remarkable'
+      'description description';
+}
+
+.home-entrepreneur-img {
+    grid-area: img;
+}
+
+.home-entrepreneur-role {
+    grid-area: role;
+}
+
+.home-entrepreneur-date {
+    grid-area: date;
+}
+
+.home-entrepreneur-remarkable {
+    grid-area: remarkable;
+}
+
+.home-entrepreneur-description {
+    grid-area: description;
+}
+
+.home-entrepreneur img {
+    width: 40%;
+}

@@ -1,3 +1,5 @@
+import './Inicio.css';
+
 import Title from '../../components/Title/Title';
 
 function Inicio() {
