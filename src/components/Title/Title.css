@@ -8,6 +8,6 @@
 .title-decoration {
   background: var(--pf-gradient-brown);
   border: none;
-  border-radius: var(--pf-radius-card);
+  border-radius: var(--pf-radius-input);
   cursor: context-menu;
 }

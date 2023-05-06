@@ -12,19 +12,23 @@
   /* height: auto; */
   text-align: center;
   gap: var(--pf-gap-card);
-  /* background: var(--pf-color-beige); */
-  /* border: var(--pf-border-width-card) solid var(--pf-color-brown-light); */
+
   /* border-radius: var(--pf-radius-card); */
 }
 
 .home-grid-fluid article h2 {
-    padding-bottom: 10px;
-    /* text-decoration: underline; */
+  padding-bottom: 10px;
+}
+
+.home-grid-fluid article {
+  /* background: var(--pf-color-brown-light); */
+  border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
+  padding: 10px;
+  border-radius: 20px;
 }
 
 .home-resume {
   grid-area: resume;
-  
 }
 
 .home-flex {
@@ -73,10 +77,47 @@
 
 .home-technologies {
   grid-area: technologies;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Diseños para el slider */
+.slider {
+  /* Establecemos esta propiedad para quitar los estilos por defecto */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Diseños para la barrita */
+  width: 200px;
+  height: 5px;
+  background-color: var(--pf-color-brown-medium);
+  outline: none;
+  /* Le damos la forma circular */
+  border-radius: var(--pf-radius-input);
+}
+
+/* Diseños para el círculo del slider */
+.slider::-webkit-slider-thumb {
+  /* Establecemos esta propiedad para quitar los estilos por defecto */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Diseños para el thumb */
+  width: 20px;
+  height: 20px;
+  background: var(--pf-color-brown-light);
+  /* Hacemos que no cambie el cursor */
+  cursor: inherit;
+  /* Le damos la forma circular */
+  border-radius: var(--pf-radius-input);
 }
 
 .home-technologies-logos {
+  display: flex;
+  justify-content: center;
   width: 15%;
+  gap: 10px;
+  padding-bottom: 10px;
 }
 
 .home-languages {

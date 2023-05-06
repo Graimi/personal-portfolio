@@ -1,7 +1,7 @@
 :root {
   /* COLOR PALETTE 🟢*/
   --pf-color-beige: #ece0c6;
-  --pf-color-brown-light: #b6a582;
+  --pf-color-brown-light: #c2ae91;
   --pf-color-brown-medium: #8d6453;
   --pf-color-brown-dark: #684638;
 
@@ -63,7 +63,7 @@
   --pf-radius-container: 32px;
   --pf-radius-card: 20px;
   --pf-radius-img: 5px;
-  /* --pf-radius-button: 80px; */
+  --pf-radius-input: 20px;
 
   /* BORDER WIDTH 🟡*/
   --pf-border-width-card: 2px;

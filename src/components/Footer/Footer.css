@@ -15,7 +15,7 @@
   height: 50px;
   background-color: var(--pf-color-brown-dark);
   background: var(--pf-gradient-brown);
-  border-radius: var(--pf-radius-card);
+  border-radius: var(--pf-radius-input);
 }
 
 /* Estilamos los iconos de contacto del footer */
