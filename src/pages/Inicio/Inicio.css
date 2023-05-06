@@ -5,6 +5,8 @@
   justify-content: center;
   /* Estas propiedades auto son muy importantes */
   grid-template-columns: 33% 33% 33%;
+  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto;
   grid-template-areas:
     'resume technologies languages'
@@ -18,10 +20,11 @@
 
 .home-grid-fluid article h2 {
   padding-bottom: 10px;
+  font-weight: 700;
 }
 
 .home-grid-fluid article {
-  /* background: var(--pf-color-brown-light); */
+  background: #ece0c6;
   border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
   padding: 10px;
   border-radius: 20px;
@@ -130,22 +133,23 @@
   align-items: center
 }
 
-
-
-
 .home-more {
   grid-area: more;
 }
 
 .home-entrepreneur {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
-    'img role'
-    'img date'
-    'remarkable remarkable'
-    'description description';
+    'img role role'
+    'img date date'
+    'description description description'
+    'remarkable remarkable remarkable'
+    ;
+    align-items: center;
+    text-align: justify;
+    gap: 10px;
 }
 
 .home-entrepreneur-img {
@@ -158,16 +162,21 @@
 
 .home-entrepreneur-date {
   grid-area: date;
-}
-
-.home-entrepreneur-remarkable {
-  grid-area: remarkable;
+  font-style: italic;
 }
 
 .home-entrepreneur-description {
-  grid-area: description;
+    grid-area: description;
+    /* font-style: italic; */
+    text-align: justify;
+    /* Establecemos un border a modo de separador de info*/
+    border-bottom: var(--pf-color-brown-medium) solid 2px;
+    /* Se añade este padding para dar espacio al border insertado */
+    padding-bottom: 10px;
+  }
+
+.home-entrepreneur-remarkable {
+  grid-area: remarkable;
+  text-align: center;
 }
 
-.home-entrepreneur img {
-  width: 40%;
-}
