@@ -1,81 +1,128 @@
 .home-grid-fluid {
   display: grid;
   justify-content: space-around;
+  justify-items: center;
+  justify-content: center;
   /* Estas propiedades auto son muy importantes */
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto auto;
   grid-template-areas:
     'resume technologies languages'
     'resume technologies more';
   /* height: auto; */
   text-align: center;
-  padding: var(--pf-padding-card);
   gap: var(--pf-gap-card);
   /* background: var(--pf-color-beige); */
   /* border: var(--pf-border-width-card) solid var(--pf-color-brown-light); */
   /* border-radius: var(--pf-radius-card); */
 }
 
+.home-grid-fluid article h2 {
+    padding-bottom: 10px;
+    /* text-decoration: underline; */
+}
+
 .home-resume {
-    grid-area: resume;
+  grid-area: resume;
+  
+}
+
+.home-flex {
+  /* display: flex;
+    flex-wrap: wrap;
+    width: 190px;
+    height: 254px;
+    gap: 10px; */
+  width: min-content;
+  height: min-content;
+  color: white;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  /* padding: 5px; */
+  gap: 10px;
+  overflow: visible;
 }
 
 .home-resume-info {
-    width: 20%;
+  /* justify-self: center; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 10px;
+  /* width: 190px;
+    height: 254px; */
+  background: var(--pf-color-brown-medium);
+  /* border: var(--pf-border-width-card) solid var(--pf-color-brown-light); */
+  border-radius: var(--pf-radius-card);
+}
+
+.home-resume-info img {
+  width: 40%;
+}
+
+.home-resume-info p,
+.home-resume-info h1,
+.home-resume-info h2,
+.home-resume-info h3 {
+  color: var(--pf-color-beige);
 }
 
 .home-technologies {
-    grid-area: technologies;
+  grid-area: technologies;
 }
 
 .home-technologies-logos {
-    width: 15%;
+  width: 15%;
 }
 
 .home-languages {
-    grid-area: languages;
+  grid-area: languages;
 }
 
 .home-languages-language {
-    display: flex;
-    /* flex-direction: column; */
+  display: flex;
+  /* flex-direction: column; */
 }
 
 .home-more {
-    grid-area: more;
+  grid-area: more;
 }
 
 .home-entrepreneur {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas:
-      'img role'
-      'img date'
-      'remarkable remarkable'
-      'description description';
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    'img role'
+    'img date'
+    'remarkable remarkable'
+    'description description';
 }
 
 .home-entrepreneur-img {
-    grid-area: img;
+  grid-area: img;
 }
 
 .home-entrepreneur-role {
-    grid-area: role;
+  grid-area: role;
 }
 
 .home-entrepreneur-date {
-    grid-area: date;
+  grid-area: date;
 }
 
 .home-entrepreneur-remarkable {
-    grid-area: remarkable;
+  grid-area: remarkable;
 }
 
 .home-entrepreneur-description {
-    grid-area: description;
+  grid-area: description;
 }
 
 .home-entrepreneur img {
-    width: 40%;
+  width: 40%;
 }
