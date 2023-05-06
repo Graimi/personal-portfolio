@@ -89,7 +89,7 @@
   appearance: none;
   -webkit-appearance: none;
   /* Diseños para la barrita */
-  width: 200px;
+  width: max-content;
   height: 5px;
   background-color: var(--pf-color-brown-medium);
   outline: none;
@@ -126,8 +126,12 @@
 
 .home-languages-language {
   display: flex;
-  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center
 }
+
+
+
 
 .home-more {
   grid-area: more;
