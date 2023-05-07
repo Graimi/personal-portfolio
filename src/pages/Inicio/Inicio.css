@@ -1,21 +1,23 @@
 .home-grid-fluid {
-  display: grid;
+  display: flex;
   justify-content: space-around;
   justify-items: center;
-  justify-content: center;
-  /* Estas propiedades auto son muy importantes */
-  grid-template-columns: 33% 33% 33%;
-  grid-template-columns: auto auto auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-template-areas:
-    'resume technologies languages'
-    'resume technologies more';
-  /* height: auto; */
+  flex-wrap: wrap;
   text-align: center;
   gap: var(--pf-gap-card);
+  grid-auto-flow: dense;
+}
 
-  /* border-radius: var(--pf-radius-card); */
+.home-resume,
+.home-technologies,
+.home-languages,
+.home-more {
+  width: 260px;
+  background: #ece0c6;
+  border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .home-grid-fluid article h2 {
@@ -23,47 +25,23 @@
   font-weight: 700;
 }
 
-.home-grid-fluid article {
-  background: #ece0c6;
-  border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
-  padding: 10px;
-  border-radius: 20px;
-}
-
-.home-resume {
-  grid-area: resume;
-}
-
 .home-flex {
-  /* display: flex;
-    flex-wrap: wrap;
-    width: 190px;
-    height: 254px;
-    gap: 10px; */
-  width: min-content;
-  height: min-content;
-  color: white;
   display: grid;
   justify-content: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  /* padding: 5px; */
   gap: 10px;
   overflow: visible;
 }
 
 .home-resume-info {
-  /* justify-self: center; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
   gap: 10px;
-  /* width: 190px;
-    height: 254px; */
   background: var(--pf-color-brown-medium);
-  /* border: var(--pf-border-width-card) solid var(--pf-color-brown-light); */
   border-radius: var(--pf-radius-card);
 }
 
@@ -130,7 +108,7 @@
 .home-languages-language {
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
 
 .home-more {
@@ -145,11 +123,10 @@
     'img role role'
     'img date date'
     'description description description'
-    'remarkable remarkable remarkable'
-    ;
-    align-items: center;
-    text-align: justify;
-    gap: 10px;
+    'remarkable remarkable remarkable';
+  align-items: center;
+  text-align: justify;
+  gap: 10px;
 }
 
 .home-entrepreneur-img {
@@ -166,17 +143,16 @@
 }
 
 .home-entrepreneur-description {
-    grid-area: description;
-    /* font-style: italic; */
-    text-align: justify;
-    /* Establecemos un border a modo de separador de info*/
-    border-bottom: var(--pf-color-brown-medium) solid 2px;
-    /* Se añade este padding para dar espacio al border insertado */
-    padding-bottom: 10px;
-  }
+  grid-area: description;
+  /* font-style: italic; */
+  text-align: justify;
+  /* Establecemos un border a modo de separador de info*/
+  border-bottom: var(--pf-color-brown-medium) solid 2px;
+  /* Se añade este padding para dar espacio al border insertado */
+  padding-bottom: 10px;
+}
 
 .home-entrepreneur-remarkable {
   grid-area: remarkable;
   text-align: center;
 }
-

@@ -35,6 +35,7 @@
   --pf-typography-p-leading: 1.5;
 
   /* MARGIN 🔴*/
+  --pf-margin-container: 10px;
   /* Determinar si hay */
   /* --pf-typography-margin-heading: 12px;
   --pf-typography-margin-body: 18px; */
