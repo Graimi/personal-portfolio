@@ -22,7 +22,7 @@ function Main() {
       return Formacion();
 
     default:
-      return `<h2>404: Página no encontrada</h2>`;
+      return Inicio();
   }
 }
 

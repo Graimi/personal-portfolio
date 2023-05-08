@@ -4,7 +4,7 @@
     flex-direction: row;
     /* Damos las medidas que queremos que tenga la app */
     width: 85%;
-    height: 85%;
+    height: 90vh;
     background: var(--pf-gradient-white);
     border-radius: var(--pf-radius-container);
     /* Obtenemos el efecto glass con esta propiedad */
