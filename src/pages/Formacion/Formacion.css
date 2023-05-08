@@ -1,7 +1,7 @@
 /* Establecemos los estilos para desplegar correctamente las cards y que se adapten correctamente */
 .learning-grid-fluid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 280px));
   gap: var(--pf-gap-grid);
   /* justify-content: center; */
   padding-bottom: 10px;
@@ -36,6 +36,14 @@
 
 .learning-institution-info {
   grid-area: info;
+}
+
+/* Alineamos el logo del país */
+.learning-location img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 25px;
 }
 
 .learning-title {
