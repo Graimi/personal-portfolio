@@ -1,6 +1,7 @@
 .glass {
     /* Distribuimos el header y main */
     display: flex;
+    flex-direction: row;
     /* Damos las medidas que queremos que tenga la app */
     width: 85%;
     height: 85%;
