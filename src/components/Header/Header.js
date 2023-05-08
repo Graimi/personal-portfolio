@@ -62,7 +62,10 @@ function Header() {
 
   // Añadimos las composiciones del header
   return `<header>
-  ${Profile('./jaime_2.jpeg', 'Jaime <br/> Flores Lujan')}
+  ${Profile(
+    'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683570387/Portfolio/jaime_w6sze5.jpg',
+    'Jaime <br/> Flores Lujan'
+  )}
   ${Navbar({ sct1, sct2, sct3, sct4 })}
   ${Footer({ rs1, rs2, rs3, rs4 })}
   </header>`;

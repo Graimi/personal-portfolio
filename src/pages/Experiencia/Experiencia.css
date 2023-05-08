@@ -1,8 +1,9 @@
 /* Establecemos los estilos para desplegar correctamente las cards y que se adapten correctamente */
 .experience-grid-fluid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 0.6fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
   gap: var(--pf-gap-grid);
+  grid-auto-flow: dense;
 }
 
 /* Definimos las propiedades para crear un template basado en grid que se adapte al contenido dado */
@@ -37,9 +38,12 @@
   grid-area: company;
 } */
 
-/* .experience-location {
-  grid-area: location;
-} */
+.experience-location img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px;
+  width: 25px;
+}
 
 .experience-job {
   grid-area: job;
