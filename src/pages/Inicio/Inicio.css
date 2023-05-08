@@ -1,54 +1,60 @@
-.home-grid-fluid {
+/* Establecemos las propiedades para distribuir las cards de información */
+/* La idea original era con grid pero no he sido capaz de hacer que las cards saltaran con la pantalla */
+.home-flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   justify-items: center;
-  flex-wrap: wrap;
   text-align: center;
   gap: var(--pf-gap-card);
-  grid-auto-flow: dense;
 }
 
-.home-resume,
-.home-technologies,
-.home-languages,
-.home-more {
-  width: 260px;
-  background: #ece0c6;
+/* Establecemos los diseños generales y comunes para las cards*/
+.card {
+  /* Ya que no he sido capaz de hacer grid en la clase padre establezco un width común */
+  width: 270px;
+  height: auto;
+  padding: var(--pf-padding-card);
+  background: var(--pf-color-beige);
   border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
-  padding: 10px;
-  border-radius: 20px;
-  margin: 10px;
+  border-radius: var(--pf-radius-card);
 }
 
-.home-grid-fluid article h2 {
-  padding-bottom: 10px;
-  font-weight: 700;
+/* Establecemos un margen extra a los títulos de las cards */
+.home-flex article h2 {
+  padding-bottom: var(--pf-padding-title);
 }
 
-.home-flex {
+/* Definimos las propiedades para visualizar las cards de resumen de la info */
+.home-resume-grid {
   display: grid;
-  justify-content: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 10px;
+  grid-template-rows: 54% 54%;
+  justify-content: center;
+  gap: var(--pf-gap-card);
   overflow: visible;
 }
 
+/* Con estas propiedades definimos el interior de las cards anteriores */
 .home-resume-info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* Establecemos un padding menos que el de un card normal ya que su tamaño es reducido */
   padding: 10px;
-  gap: 10px;
+  gap: var(--pf-gap-card);
   background: var(--pf-color-brown-medium);
   border-radius: var(--pf-radius-card);
 }
 
+/* Establecemos un tamaño adecuado para los iconos dentro de las cards resumen */
 .home-resume-info img {
   width: 40%;
 }
 
+/* Cambiamos el color del texto de las cards resumen para darle más énfasis */
 .home-resume-info p,
 .home-resume-info h1,
 .home-resume-info h2,
@@ -56,12 +62,12 @@
   color: var(--pf-color-beige);
 }
 
+/* Diseños para la card de tecnologia */
 .home-technologies {
-  grid-area: technologies;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: var(--pf-gap-card);
 }
 
 /* Diseños para el slider */
@@ -87,34 +93,34 @@
   width: 20px;
   height: 20px;
   background: var(--pf-color-brown-light);
-  /* Hacemos que no cambie el cursor */
-  cursor: inherit;
   /* Le damos la forma circular */
   border-radius: var(--pf-radius-input);
+  /* Hacemos que no cambie el cursor */
+  cursor: inherit;
 }
 
+/* Definimos la distribución y el tamaño de los logos contenidos en tecnología */
 .home-technologies-logos {
   display: flex;
   justify-content: center;
   width: 15%;
-  gap: 10px;
-  padding-bottom: 10px;
+  gap: var(--pf-gap-card);
+  padding-bottom: var(--pf-padding-list);
 }
 
+/* Establecemos una separación entre los dos elementos acorde al gap de cards */
 .home-languages {
-  grid-area: languages;
+  margin-bottom: var(--pf-gap-card);
 }
 
+/* Distribuímos los idiomas para que se vean correctamente */
 .home-languages-language {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.home-more {
-  grid-area: more;
-}
-
+/* Diseñamos la card de emprendimiento con un grid */
 .home-entrepreneur {
   display: grid;
   grid-template-columns: auto auto auto;
@@ -126,9 +132,9 @@
     'remarkable remarkable remarkable';
   align-items: center;
   text-align: justify;
-  gap: 10px;
+  gap: var(--pf-gap-card);
 }
-
+/* Establecemos las diferentes grid areas */
 .home-entrepreneur-img {
   grid-area: img;
 }
@@ -139,6 +145,7 @@
 
 .home-entrepreneur-date {
   grid-area: date;
+  /* Damos efecto al texto con la cursiva */
   font-style: italic;
 }
 
@@ -154,5 +161,7 @@
 
 .home-entrepreneur-remarkable {
   grid-area: remarkable;
+  /* El texto contiene un a, le quitamos la decoración */
+  text-decoration: none;
   text-align: center;
 }

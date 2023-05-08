@@ -2,8 +2,8 @@
     /* Distribuimos el header y main */
     display: flex;
     /* Damos las medidas que queremos que tenga la app */
-    height: 80vh;
     width: 85%;
+    height: 85%;
     background: var(--pf-gradient-white);
     border-radius: var(--pf-radius-container);
     /* Obtenemos el efecto glass con esta propiedad */

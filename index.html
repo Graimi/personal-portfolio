@@ -18,17 +18,16 @@
   </head>
   <body>
     <div id="app" class="glass">
-      <!-- Añadir Descargar CV? -->
       <main>
         <div class="title">
           <h1>Portfolio personal</h1>
           <div class="title-decoration"><br /></div>
         </div>
 
-        <section class="home-grid-fluid">
-          <article class="home-resume">
+        <section class="home-flex">
+          <article class="home-resume card">
             <h2>Resumen</h2>
-            <div class="home-flex">
+            <div class="home-resume-grid">
               <div class="home-resume-info">
                 <img
                   src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683374192/Portfolio/maleta_qqam1q.png"
@@ -64,7 +63,7 @@
             </div>
           </article>
 
-          <article class="home-technologies">
+          <article class="home-technologies card">
             <h2>Tecnologías</h2>
             <h3>Básico</h3>
             <input
@@ -137,7 +136,7 @@
             </div>
           </article>
           <article class="home-half">
-            <article class="home-languages">
+            <article class="home-languages card">
               <h2>Idiomas</h2>
               <div class="home-languages-language">
                 <h3>Español</h3>
@@ -180,7 +179,7 @@
               </div>
             </article>
 
-            <article class="home-more">
+            <article class="home-more card">
               <h2>Emprendimiento</h2>
               <div class="home-entrepreneur">
                 <img
@@ -190,9 +189,12 @@
                 />
                 <h3 class="home-entrepreneur-role">Cofundador proyecto</h3>
                 <p class="home-entrepreneur-date">Proyecto inactivo</p>
-                <p class="home-entrepreneur-remarkable">
-                  🏆 Ganador 1ª Edición "Cáceres Startups" 2022
-                </p>
+                <a
+                  class="home-entrepreneur-remarkable"
+                  href="https://www.elperiodicoextremadura.com/caceres-local/2022/07/20/plataforma-caceres-impulsa-da-empujon-68547740.html"
+                >
+                  <p>🏆 "Cáceres Startups" 2022 📤</p>
+                </a>
                 <p class="home-entrepreneur-description">
                   Combatir la soledad en personas mayores a través de comandos de voz en Alexa
                 </p>
