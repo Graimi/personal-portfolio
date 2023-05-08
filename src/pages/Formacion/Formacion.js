@@ -11,8 +11,8 @@ function Formacion() {
     <article class="learning">
       <img class="learning-logo" src="./unex.png" alt="" />
       <div class="learning-institution-info">
-        <h3 class="learning-institution">Universidad de extremadura</h3>
-        <p class="learning-location">Cáceres, ES 🔴</p>
+        <h3 class="learning-institution">Universidad de Extremadura</h3>
+        <p class="learning-location">Cáceres, 🇪🇸 ES 🇪🇸 &#x1F1EA;&#x1F1F8; 🔴</p>
       </div>
       <p class="learning-title">Grado en administracion y direccion empresas</p>
       <p class="learning-description">TFG: Formación Experiencial</p>
