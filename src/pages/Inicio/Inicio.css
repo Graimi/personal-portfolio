@@ -12,7 +12,9 @@
 /* Establecemos los diseños generales y comunes para las cards*/
 .card {
   /* Ya que no he sido capaz de hacer grid en la clase padre establezco un width común */
-  width: 270px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
   height: auto;
   padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
@@ -30,10 +32,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-rows: 54% 54%;
+  /* grid-template-rows: 50% 50%; */
   justify-content: center;
   gap: var(--pf-gap-card);
-  overflow: visible;
+  overflow: hidden;
 }
 
 /* Con estas propiedades definimos el interior de las cards anteriores */
@@ -101,12 +103,18 @@
 
 /* Definimos la distribución y el tamaño de los logos contenidos en tecnología */
 .home-technologies-logos {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  width: 15%;
+  align-items: center;
   gap: var(--pf-gap-card);
   padding-bottom: var(--pf-padding-list);
+}
+
+/* Establecemos el width aquí para poder ordenar las img correctamente */
+.home-technologies-logos img {
+    width: 24px;
 }
 
 /* Establecemos una separación entre los dos elementos acorde al gap de cards */
