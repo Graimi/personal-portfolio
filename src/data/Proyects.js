@@ -56,6 +56,10 @@ const proyectsData = [
       {
         technology: 'VITE',
         img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/vite_pv5xkq.svg'
+      },
+      {
+        technology: 'NETLIFY',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683639756/logos/netlify_pyg9aa.png'
       }
     ]
   },
@@ -94,6 +98,10 @@ const proyectsData = [
       {
         technology: 'VITE',
         img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/vite_pv5xkq.svg'
+      },
+      {
+        technology: 'NETLIFY',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683639756/logos/netlify_pyg9aa.png'
       }
     ]
   },
@@ -132,6 +140,10 @@ const proyectsData = [
       {
         technology: 'VITE',
         img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/vite_pv5xkq.svg'
+      },
+      {
+        technology: 'NETLIFY',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683639756/logos/netlify_pyg9aa.png'
       }
     ]
   },
@@ -166,6 +178,10 @@ const proyectsData = [
       {
         technology: 'VITE',
         img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/vite_pv5xkq.svg'
+      },
+      {
+        technology: 'NETLIFY',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683639756/logos/netlify_pyg9aa.png'
       }
     ]
   }

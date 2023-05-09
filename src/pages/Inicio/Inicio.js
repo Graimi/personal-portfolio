@@ -4,6 +4,7 @@ import Title from '../../components/Title/Title';
 import proyectsData from '../../data/Proyects';
 import experienceData from '../../data/Experience';
 import learningData from '../../data/Learning';
+import { advanceData, basicData, mediumData } from '../../data/Technologies';
 
 function Inicio() {
   // Creamos la siguiente función para contar de manera dinámica los diferentes cards que conforman el portfolio
@@ -12,6 +13,45 @@ function Inicio() {
   <h1>${item.length}</h1>
   `;
   }
+
+  // Creamos una función para implementar fácilmente los sliders
+  function sliderTemplate(heading, value) {
+    return `
+    <h3>${heading}</h3>
+    <input
+      type="range"
+      min="0"
+      max="100"
+      step="1"
+      value=${value}
+      readonly="true"
+      disabled="true"
+      class="slider"
+    />
+  `;
+  }
+
+  function technologiesItems(item) {
+    return item.map((tech) => {
+      return `
+    <img
+      src=${tech.img}
+      alt=${tech.technology}
+    />
+    `;
+    });
+  }
+
+  // const technologiesItems = technologiesData.map((item) => {
+  //   const technologiesItems = item.technologies.map((technology) => {
+  //     return `
+  //       <img
+  //         src="${technology.img}"
+  //         alt="${technology.technology}"
+  //       />
+  //     `;
+  //   });
+  // })
 
   return `
   <main>
@@ -57,117 +97,33 @@ function Inicio() {
 
     <article class="home-technologies card">
       <h2>Tecnologías</h2>
-      <h3>Básico</h3>
-      <input
-        type="range"
-        min="0"
-        max="100"
-        step="1"
-        value="25"
-        readonly="true"
-        disabled="true"
-        class="slider"
-      />
+      ${sliderTemplate('Básico', 25)}
       <div class="home-technologies-logos">
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg"
-          alt="python"
-        />
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg"
-          alt="python"
-        />
+      ${technologiesItems(basicData).join('')}
       </div>
 
-      <div>
-        <h3>Intermedio</h3>
-        <input
-          type="range"
-          min="0"
-          max="100"
-          step="1"
-          value="50"
-          readonly="true"
-          disabled="true"
-          class="slider"
-        />
-      </div>
+      ${sliderTemplate('Intermedio', 50)}
       <div class="home-technologies-logos">
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg"
-          alt="python"
-        />
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg"
-          alt="python"
-        />
+      ${technologiesItems(mediumData).join('')}
       </div>
 
-      <div>
-        <h3>Avanzado</h3>
-        <input
-          type="range"
-          min="0"
-          max="100"
-          step="1"
-          value="75"
-          readonly="true"
-          disabled="true"
-          class="slider"
-        />
-      </div>
+      ${sliderTemplate('Avanzado', 75)}
       <div class="home-technologies-logos">
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg"
-          alt="python"
-        />
-        <img
-          src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg"
-          alt="python"
-        />
+      ${technologiesItems(advanceData).join('')}
       </div>
     </article>
+
     <article class="home-half">
       <article class="home-languages card">
         <h2>Idiomas</h2>
         <div class="home-languages-language">
-          <h3>Español</h3>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            step="1"
-            value="100"
-            readonly="true"
-            disabled="true"
-            class="slider"
-          />
+        ${sliderTemplate('Español', 100)}
         </div>
         <div class="home-languages-language">
-          <h3>Inglés</h3>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            step="1"
-            value="66"
-            readonly="true"
-            disabled="true"
-            class="slider"
-          />
+        ${sliderTemplate('Inglés', 66)}
         </div>
         <div class="home-languages-language">
-          <h3>Portugués</h3>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            step="1"
-            value="33"
-            readonly="true"
-            disabled="true"
-            class="slider"
-          />
+        ${sliderTemplate('Portugués', 33)}
         </div>
       </article>
 

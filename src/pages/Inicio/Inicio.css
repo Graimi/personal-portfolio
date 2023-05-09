@@ -102,6 +102,7 @@
 /* Definimos la distribución y el tamaño de los logos contenidos en tecnología */
 .home-technologies-logos {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   width: 15%;
   gap: var(--pf-gap-card);
