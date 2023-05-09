@@ -25,7 +25,7 @@ const experienceData = [
       '- Beca Diputación Cáceres "Lazos que unen" y subvención "PIT" Junta de Extremadura<br /> - Gestionar proyectos técnicos a nivel nacional <br /> - Participar en el desarrollo de proyectos sociales <br /> - Diseñar material gráfico corporativo y aplicado a los proyectos en marcha'
   },
   {
-    company: 'Fruit Vegetables EUROPE (EUCOFEL)',
+    company: 'Fruit Vegetables EUROPE',
     logo: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683572760/Portfolio/EUCOFEL_v9w6mc.png',
     link: 'https://eucofel.eu/',
     location: 'Bruselas, BE',
