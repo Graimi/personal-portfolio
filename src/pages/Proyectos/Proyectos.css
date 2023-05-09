@@ -1,17 +1,18 @@
 /* Las diferentes cards de proyectos se alinearan con la siguiente configuración */
 .proyect-grid-fluid {
-  margin: 16px auto;
-  max-width: 90%;
+  /* max-width: 90%; */
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+  gap: var(--pf-gap-grid);
+  grid-auto-flow: dense;
 }
 
 /* Establecemos los estilos que tendrán en común las cards */
 .proyect {
   position: relative;
   /* Establecemos unas medidas que permitan ver todo el contenido */
-  width: 210px;
-  height: 300px;
+  width: 240px;
+  height: 320px;
   outline: 2px solid var(--pf-color-brown-light);
   border-radius: var(--pf-radius-card);
   padding: 16px;
@@ -42,8 +43,8 @@
 /* Establecemos las propiedades de la img del proyecto */
 .proyect-img {
   border-radius: var(--pf-radius-img);
-  width: 170px;
-  height: 100px;
+  /* width: 170px; */
+  height: 110px;
 }
 
 /* Distribuimos eficientemente los logos de las tecnologías */
@@ -79,6 +80,10 @@
   transform: translateX(120%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   text-align: justify;
+}
+
+.proyect-origin {
+  font-style: italic;
 }
 
 /* Damos las propiedades al logo de github */

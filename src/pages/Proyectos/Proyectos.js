@@ -30,12 +30,21 @@ function Proyectos() {
       </div>
       <div class="proyect-back">
         <p>${item.description}</p>
-        <a href=${item.linkRepo}>
+        <p class="proyect-origin">${item.origin}</p>
+        <div>
+          <a href=${item.linkRepo} target="_blank" rel="noopener noreferrer">
+            <img
+              src=${item.imgRepo}
+              alt=${item.repo}
+            />
+          </a>
+          <a href=${item.linkdeploy} target="_blank" rel="noopener noreferrer">
           <img
-            src=${item.imgRepo}
-            alt=${item.repo}
+            src=https://res.cloudinary.com/dwsffp1eq/image/upload/v1683626612/Portfolio/open_in_new_liibm3.svg
+            alt='open in new'
           />
         </a>
+      </div>
       </div>
     </article>
   `;
