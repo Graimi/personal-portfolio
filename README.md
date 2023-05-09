@@ -51,6 +51,7 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 ## Pasos
 <ol>
 <li> [] General </li>
+[] Cambiar hover por click? <br>
 [] Carpetas organizadas <br>
 [] Componentes separados <br>
 [] Código comentado <br>
@@ -67,6 +68,7 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Proyectos <br>
 [✅] Experiencia <br>
 [✅] Formación <br>
+[] ¿Cambiar la cards a la misma que proyectos? <br>
 [] root limpio <br>
 [] Propiedades de acuerdo al root <br>
 [] Medias queries <br>

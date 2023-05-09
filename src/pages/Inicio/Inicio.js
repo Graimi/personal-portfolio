@@ -1,8 +1,18 @@
 import './Inicio.css';
 
 import Title from '../../components/Title/Title';
+import proyectsData from '../../data/Proyects';
+import experienceData from '../../data/Experience';
+import learningData from '../../data/Learning';
 
 function Inicio() {
+  // Creamos la siguiente función para contar de manera dinámica los diferentes cards que conforman el portfolio
+  function itemCounter(item) {
+    return `
+  <h1>${item.length}</h1>
+  `;
+  }
+
   return `
   <main>
     ${Title('Bienvenido a mi sitio web')}
@@ -15,7 +25,7 @@ function Inicio() {
             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683374192/Portfolio/maleta_qqam1q.png"
             alt="proyects"
           />
-          <h1>?</h1>
+          ${itemCounter(proyectsData)}
           <p>Proyectos</p>
         </div>
         <div class="home-resume-info">
@@ -23,7 +33,7 @@ function Inicio() {
             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683374192/Portfolio/compania_bsaq8y.png"
             alt="proyects"
           />
-          <h1>?</h1>
+          ${itemCounter(experienceData)}
           <p>Experiencias</p>
         </div>
         <div class="home-resume-info">
@@ -31,7 +41,7 @@ function Inicio() {
             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683374192/Portfolio/birrete_ornbyh.png"
             alt="proyects"
           />
-          <h1>?</h1>
+          ${itemCounter(learningData)}
           <p>Formaciones</p>
         </div>
         <div class="home-resume-info">

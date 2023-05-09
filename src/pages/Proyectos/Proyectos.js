@@ -31,7 +31,7 @@ function Proyectos() {
       <div class="proyect-back">
         <p>${item.description}</p>
         <p class="proyect-origin">${item.origin}</p>
-        <div>
+        <div class="proyect-links">
           <a href=${item.linkRepo} target="_blank" rel="noopener noreferrer">
             <img
               src=${item.imgRepo}
@@ -40,7 +40,7 @@ function Proyectos() {
           </a>
           <a href=${item.linkdeploy} target="_blank" rel="noopener noreferrer">
           <img
-            src=https://res.cloudinary.com/dwsffp1eq/image/upload/v1683626612/Portfolio/open_in_new_liibm3.svg
+            src='https://res.cloudinary.com/dwsffp1eq/image/upload/v1683626612/Portfolio/open_in_new_liibm3.svg'
             alt='open in new'
           />
         </a>
