@@ -1,11 +1,42 @@
 export const basicData = [
   {
+    technology: 'PYTHON',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/python_zcbubw.svg'
+  },
+  {
+    technology: 'SQL',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362633/logos/mysql_ojdydo.png'
+  },
+  {
+    technology: 'R',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683643458/logos/r_cewuza.png'
+  },
+  {
+    technology: 'JAVA',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683643458/logos/JAVA_onxlxy.png'
+  },
+  {
+    technology: 'C#',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683643457/logos/Csharp_mtomfu.png'
+  }
+];
+
+export const mediumData = [
+  {
+    technology: 'GIT',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/git_pqtmjy.png'
+  },
+  {
     technology: 'HTML',
     img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/html_jhpxjv.png'
   },
   {
     technology: 'CSS',
     img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/css_zxaqym.png'
+  },
+  {
+    technology: 'JAVASCRIPT',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/js_wgrovv.png'
   },
   {
     technology: 'REACT',
@@ -25,16 +56,13 @@ export const basicData = [
   }
 ];
 
-export const mediumData = [
-  {
-    technology: 'HTML',
-    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/html_jhpxjv.png'
-  }
-];
-
 export const advanceData = [
   {
-    technology: 'HTML',
-    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/html_jhpxjv.png'
+    technology: 'Office',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683643289/logos/office_iw7eew.png'
+  },
+  {
+    technology: 'Google',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/google_f58pby.png'
   }
 ];

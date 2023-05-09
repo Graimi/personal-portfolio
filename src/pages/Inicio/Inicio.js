@@ -31,6 +31,7 @@ function Inicio() {
   `;
   }
 
+  // Creamos la función para recorrer el array de los diferentes niveles de tecnologías
   function technologiesItems(item) {
     return item.map((tech) => {
       return `
@@ -41,17 +42,6 @@ function Inicio() {
     `;
     });
   }
-
-  // const technologiesItems = technologiesData.map((item) => {
-  //   const technologiesItems = item.technologies.map((technology) => {
-  //     return `
-  //       <img
-  //         src="${technology.img}"
-  //         alt="${technology.technology}"
-  //       />
-  //     `;
-  //   });
-  // })
 
   return `
   <main>
