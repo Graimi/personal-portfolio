@@ -14,7 +14,7 @@
   /* Establecemos unas medidas que permitan una buena distribución del grow */
   width: 240px;
   max-width: 290px;
-  height: 320px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;

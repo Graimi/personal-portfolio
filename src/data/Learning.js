@@ -21,7 +21,8 @@ const learningData = [
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Desarrollo de Aplicaciones Multiplataforma',
-    description: 'Título oficial de FP para crear y desarrollar aplicaciones para todo tipo de dispositivos',
+    description:
+      'Título oficial de FP para crear y desarrollar aplicaciones para todo tipo de dispositivos',
     date: '2022 - Ongoing',
     ects: '2.000h'
   },
@@ -33,7 +34,8 @@ const learningData = [
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Rock{theCode}',
-    description: 'Programador Full Stack',
+    description:
+      'Programador Full Stack <br/> - Módulo 1: Fundamentos <br/> - Módulo 2: Frontend <br/> - Módulo 3: Backend <br/> - Módulo 4: Testing <br/> - Módulo 5: Despliegues <br/> - Módulo 6: FREELANCE',
     date: '2022 - Ongoing',
     ects: '934h'
   },
@@ -45,7 +47,8 @@ const learningData = [
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'ThePowerMBA',
-    description: 'Especialización en marketing digital',
+    description:
+      'Espec en marketing digital <br/> - Módulo 1: Modelos de Negocio <br/> - Módulo 2: Lean Startup <br/> - Módulo 3: Strategy <br/> - Módulo 4: Marketing Digital <br/> - Módulo 5: Emprendimiento <br/> - Módulo 6: Leadership <br/> - Módulo 7: Finanzas',
     date: '2022 - Ongoing',
     ects: '120h'
   },
@@ -68,7 +71,7 @@ const learningData = [
     location: 'Online',
     country: 'Estados Unidos',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683551882/Pa%C3%ADses/eeuu_zyaeiq.png',
-    title: 'Soporte de Tecnologías de la Información de Google',
+    title: 'Soporte de TICs de Google',
     description: 'Curso realizado en la plataforma Coursera, subvencionado por FUNDAE',
     date: '2021',
     ects: '133h'
@@ -81,7 +84,8 @@ const learningData = [
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Digital Experience IBM',
-    description: 'Becas Santander Tecnología',
+    description:
+      'Becas Santander Tecnología <br/> - Formación en competencias digitales, entre las que destacan Design Thinking, Blockchain, Cyber, Problem Solving y Watson (Inteligencia artificial)',
     date: '2021',
     ects: '23h'
   },
@@ -92,9 +96,9 @@ const learningData = [
     location: 'Cáceres, ES',
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
-    title:
-      'Internet of things, BigData, Machine Learning, y Blockchain para revolucionar el sector agroganadero',
-    description: 'XXI Cursos Internacionales de Verano de la Universidad de Extremadura',
+    title: 'IoT, BigData, Blockchain ...',
+    description:
+      'XXI Cursos Internacionales de Verano de la Universidad de Extremadura <br/> - Internet of things, BigData, Machine Learning, y Blockchain para revolucionar el sector agroganadero',
     date: '2020',
     ects: '15h'
   },
@@ -106,9 +110,23 @@ const learningData = [
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Transformación Digital',
-    description: '',
+    description:
+      '- Módulo 1: Concepto de transformación digital <br/> - Módulo 2: Palancas de la transformación digital <br/> - Módulo 3: Factores críticos',
     date: '2020',
     ects: '10h'
+  },
+  {
+    institution: 'SuperDataScience Team',
+    logo: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683730594/Portfolio/SuperDataScience_np0iio.png',
+    link: 'https://www.udemy.com/course/machinelearning-es/',
+    location: 'Online',
+    country: 'España',
+    flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
+    title: 'Machine Learning, R y Python para Data Science',
+    description:
+      'Pre procesado de datos, regresión, clustering, reglas de asociación, Deep Learning, selección de modelos...',
+    date: '2020',
+    ects: '51h'
   },
   {
     institution: 'Universitat de Barcelona',
@@ -124,7 +142,7 @@ const learningData = [
     ects: '40 ects'
   },
   {
-    institution: 'Cambridge University',
+    institution: 'University of Cambridge',
     logo: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683552771/Portfolio/university-of-cambridge_xtq9cq.png',
     link: 'https://www.cambridgeenglish.org/es/exams-and-tests/first/',
     location: 'Brighton, UK',
@@ -133,7 +151,7 @@ const learningData = [
     title: 'First Certificate English',
     description: 'Título ofical obtenido en Brighton',
     date: '2018',
-    ects: 'N/A'
+    ects: ''
   },
   {
     institution: 'Universitas Telefónica',
@@ -142,8 +160,9 @@ const learningData = [
     location: 'Online',
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
-    title: 'Introducción a la programación. Descubre el lenguaje de la era digital. (5.a edición)',
-    description: 'Curso desarrollado en la plataforma MiriadaX',
+    title: 'Introducción a la programación',
+    description:
+      'Curso desarrollado en la plataforma MiriadaX <br/> - Descubre el lenguaje de la era digital. (5.a edición)',
     date: '2017',
     ects: '30h'
   },
@@ -167,7 +186,7 @@ const learningData = [
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Curso avanzado en prevención de riesgos laborales',
-    description: '',
+    description: 'Curso ofrecido por el Servicio de Prevención Mancomunado de Grupo ASISA',
     date: '2016',
     ects: '10h'
   },
@@ -178,8 +197,9 @@ const learningData = [
     location: 'Online',
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
-    title: 'Sostenibilidad ambiental de las organizaciones en la economía circular',
-    description: 'Curso desarrollado en la plataforma MiriadaX',
+    title: ' MOOC Sostenibilidad ambiental',
+    description:
+      'Curso desarrollado en la plataforma MiriadaX <br/> - Sostenibilidad ambiental de las organizaciones en la economía circular',
     date: '2016',
     ects: '20h'
   },
@@ -202,9 +222,9 @@ const learningData = [
     location: 'Cáceres, ES',
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
-    title:
+    title: 'Planificación estratégica de los RRHH',
+    description:
       'La gestión de la planificación estratégica de los RRHH en las nuevas organizaciones desde la perspectiva de la RSC',
-    description: '',
     date: '2015',
     ects: 'N/A'
   },
