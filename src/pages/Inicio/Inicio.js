@@ -47,7 +47,7 @@ function Inicio() {
   <main>
     ${Title('Bienvenido a mi sitio web')}
     <section class="home-flex">
-    <article class="home-resume card">
+    <article class="home-resume home-card">
       <h2>Resumen</h2>
       <div class="home-resume-grid">
         <div class="home-resume-info">
@@ -85,7 +85,7 @@ function Inicio() {
       </div>
     </article>
 
-    <article class="home-technologies card">
+    <article class="home-technologies home-card">
       <h2>Tecnologías</h2>
       ${sliderTemplate('Básico', 25)}
       <div class="home-technologies-logos">
@@ -104,7 +104,7 @@ function Inicio() {
     </article>
 
     <article class="home-half">
-      <article class="home-languages card">
+      <article class="home-languages home-card">
         <h2>Idiomas</h2>
         <div class="home-languages-language">
         ${sliderTemplate('Español', 100)}
@@ -117,7 +117,7 @@ function Inicio() {
         </div>
       </article>
 
-      <article class="home-more card">
+      <article class="home-more home-card">
         <h2>Emprendimiento</h2>
         <div class="home-entrepreneur">
           <img

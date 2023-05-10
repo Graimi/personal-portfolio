@@ -1,6 +1,7 @@
 import './Formacion.css';
 import Title from '../../components/Title/Title';
 import learningData from '../../data/Learning'; // Importa el array de datos
+import generateCards from '../../components/Card/Card';
 
 function Formacion() {
   const learningItems = learningData.map((item) => {
@@ -25,7 +26,8 @@ function Formacion() {
     <main>
       ${Title('Mi formación')}
       <section class="learning-grid-fluid">
-        ${learningItems.join('')} <!-- Une los elementos generados por el map() -->
+      ${generateCards(learningData)}
+        ${learningItems.join('')}
       </section>
     </main>
   `;

@@ -2,6 +2,7 @@ import './Experiencia.css';
 
 import Title from '../../components/Title/Title';
 import experienceData from '../../data/Experience';
+import generateCards from '../../components/Card/Card';
 
 function Experiencia() {
   const experienceItems = experienceData.map((item) => {
@@ -27,6 +28,7 @@ function Experiencia() {
   <main>
     ${Title('Mi experiencia laboral')}
     <section class="experience-grid-fluid">
+    ${generateCards(experienceData)}
     ${experienceItems.join('')}
   </section>
   </main>

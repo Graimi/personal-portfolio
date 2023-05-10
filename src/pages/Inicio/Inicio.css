@@ -10,7 +10,7 @@
 }
 
 /* Establecemos los diseños generales y comunes para las cards*/
-.card {
+.home-card {
   /* Ya que no he sido capaz de hacer grid en la clase padre establezco un width común */
   display: flex;
   flex-direction: column;
