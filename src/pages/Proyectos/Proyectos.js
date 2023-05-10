@@ -53,7 +53,7 @@ function Proyectos() {
   return `
   <main>
     ${Title('Mis proyectos')}
-    <section class="proyect-grid-fluid">
+    <section class="proyect-flex-fluid">
     ${proyectItems.join('')}
   </section>
     </main>

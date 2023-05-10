@@ -1,18 +1,22 @@
 /* Las diferentes cards de proyectos se alinearan con la siguiente configuración */
-.proyect-grid-fluid {
-  /* max-width: 90%; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+.proyect-flex-fluid {
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--pf-gap-grid);
-  grid-auto-flow: dense;
 }
 
 /* Establecemos los estilos que tendrán en común las cards */
 .proyect {
   position: relative;
+    /* Es muy importante esta propiedad para que crezcan las cards */
+    flex-grow: 1;
   /* Establecemos unas medidas que permitan ver todo el contenido */
-  width: 240px;
+  width: 210px;
+  max-width: 260px;
   height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: 2px solid var(--pf-color-brown-light);
   border-radius: var(--pf-radius-card);
   padding: 16px;
@@ -27,10 +31,11 @@
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 15px;
   /* Con esta propiedad evitamos que se descentre el contenido */
-  left: 0;
+  /* left: 0; */
   /* Establecemos el efecto */
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -38,6 +43,7 @@
 /* Mentenemos los estilos del h pero le aplicamos un bold para dar más importancia*/
 .proyect-title {
   font-weight: bold;
+  text-align: center;
 }
 
 /* Establecemos las propiedades de la img del proyecto */
@@ -59,8 +65,8 @@
 
 /* Establecemos el tamaños de los logos */
 .proyect-technologies img {
-  width: 18%;
-  height: 18%;
+  width: 32px;
+  height: 32px;
 }
 
 /* Hemos obtenido la flecha de Google Fonts, la cargamos con las propiedades que he decidido */
@@ -71,13 +77,13 @@
 /* Establecemos el efecto del hover para desplazar el contenido */
 .proyect:hover .proyect-front {
     /* Damos un efecto extra al añadir ese 20% */
-    transform: translateX(-120%);
+    transform: translateX(-200%);
   }
 
 /* Gestionamos los estilos de la parte back de la card, donde irá la descripción del proyecto */
 .proyect-back {
     /* De base mantenemos la parte trasera del back con el translate para que no se vea */
-  transform: translateX(120%);
+  transform: translateX(200%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   text-align: justify;
   gap: var(--pf-gap-grid);
