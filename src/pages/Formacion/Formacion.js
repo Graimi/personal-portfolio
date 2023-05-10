@@ -26,7 +26,7 @@ function Formacion() {
     <main>
       ${Title('Mi formación')}
       <section class="learning-grid-fluid">
-      ${generateCards(learningData)}
+      ${generateCards(learningData).join('')}
         ${learningItems.join('')}
       </section>
     </main>

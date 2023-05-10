@@ -28,7 +28,7 @@ function Experiencia() {
   <main>
     ${Title('Mi experiencia laboral')}
     <section class="experience-grid-fluid">
-    ${generateCards(experienceData)}
+    ${generateCards(experienceData).join('')}
     ${experienceItems.join('')}
   </section>
   </main>

@@ -26,7 +26,7 @@ const learningData = [
     ects: '2.000h'
   },
   {
-    institution: 'ThePower Business School',
+    institution: 'The Power Business School',
     logo: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683549981/Portfolio/ThePower-business-school_cmavi0.png',
     link: 'https://www.rockthecode.es/',
     location: 'Online',
@@ -38,7 +38,7 @@ const learningData = [
     ects: '934h'
   },
   {
-    institution: 'ThePower Business School',
+    institution: 'The Power Business School',
     logo: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683549981/Portfolio/ThePower-business-school_cmavi0.png',
     link: 'https://www.thepowermba.com/es/master-mba-marketing-digital',
     location: 'Online',

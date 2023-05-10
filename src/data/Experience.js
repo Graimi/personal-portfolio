@@ -27,7 +27,7 @@ const experienceData = [
     ects: ''
   },
   {
-    institution: 'Fruit Vegetables EUROPE',
+    institution: 'EUCOFEL',
     logo: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683572760/Portfolio/EUCOFEL_v9w6mc.png',
     link: 'https://eucofel.eu/',
     location: 'Bruselas, BE',
