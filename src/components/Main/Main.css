@@ -1,5 +1,6 @@
 main {
   width: 100%;
   padding: var(--pf-padding-container);
+  margin: var(--pf-margin-container);
   overflow: auto;
 }

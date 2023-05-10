@@ -1,18 +1,23 @@
 /* Las diferentes cards de cardos se alinearan con la siguiente configuración */
-.card-grid-fluid {
-  /* max-width: 90%; */
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 320px));
+.card-flex-fluid {
+  display: flex;
+  flex-wrap: wrap;
   gap: var(--pf-gap-grid);
-  grid-auto-flow: dense;
 }
 
 /* Establecemos los estilos que tendrán en común las cards */
 .card {
+  /* Con eso mantenemos la visualización de la card */
   position: relative;
-  /* Establecemos unas medidas que permitan ver todo el contenido */
+  /* Es muy importante esta propiedad para que crezcan las cards */
+  flex-grow: 1;
+  /* Establecemos unas medidas que permitan una buena distribución del grow */
   width: 240px;
+  max-width: 290px;
   height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: 2px solid var(--pf-color-brown-light);
   border-radius: var(--pf-radius-card);
   padding: 16px;
@@ -46,6 +51,10 @@
   text-align: center;
 }
 
+.card-technologies {
+  display: none;
+}
+
 /* Establecemos las propiedades de la img del cardo */
 .card-img {
   border-radius: var(--pf-radius-img);
@@ -71,21 +80,21 @@
 
 /* Establecemos el efecto del hover para desplazar el contenido */
 .card:hover .card-front {
-  /* Damos un efecto extra al añadir ese 20% */
-  transform: translateX(-120%);
+  /* Es importante que sea un 200% para que no se vea nada de la otra card */
+  transform: translateX(-200%);
 }
 
 /* Gestionamos los estilos de la parte back de la card, donde irá la descripción del cardo */
 .card-back {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    /* align-content: flex-end; */
-    /* width: 90%; */
-    /* height: 0%; */
-  /* De base mantenemos la parte trasera del back con el translate para que no se vea */
-  transform: translateX(120%);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* align-content: flex-end; */
+  /* width: 90%; */
+  /* height: 0%; */
+  /* Es importante que sea un 200% para que no se vea nada de la otra card */
+  transform: translateX(200%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   /* text-align: justify; */
   gap: var(--pf-gap-card);
@@ -94,15 +103,15 @@
 
 /* Damos un estilo de cursiva a la ubicación */
 .card-location {
-    font-style: italic;
-  }
+  font-style: italic;
+}
 
-  .card-description {
-      /* Establecemos un border a modo de separador de info*/
+.card-description {
+  /* Establecemos un border a modo de separador de info*/
   border-bottom: var(--pf-color-brown-medium) solid 2px;
   /* Se añade este padding para dar espacio al border insertado */
   padding-bottom: 10px;
-  }
+}
 
 .card-info {
   display: flex;

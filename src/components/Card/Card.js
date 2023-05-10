@@ -1,5 +1,6 @@
 import './Card.css';
 
+// Creamos la template que usaremos para las cards
 function Card(item) {
   return `
       <article class="card">
@@ -19,95 +20,30 @@ function Card(item) {
           <p class="card-description">${item.description}</p>
           <div class="card-info">
             <p>${item.date}</p>
-            
+            <p>${item.ects}</p>
             <a href=${item.link} target="_blank" rel="noopener noreferrer">
             <img
-              src='https://res.cloudinary.com/dwsffp1eq/image/upload/v1683626612/Portfolio/open_in_new_liibm3.svg'
-              alt='open in new'
+                src='https://res.cloudinary.com/dwsffp1eq/image/upload/v1683626612/Portfolio/open_in_new_liibm3.svg'
+                alt='open in new'
             />
-          </a>
-          <p>${item.ects}</p>
+            </a>
           </div>
         </div>
       </article>
     `;
 }
 
+// Con esta función recorremos la data de los arrays
 function generateCards(array) {
   return array.map((item) => Card(item));
 }
 
-// function generateCard(
-//   item,
-//   cardName,
-//   imgName,
-//   technologiesName,
-//   descriptionName,
-//   originName,
-//   linkRepoName,
-//   imgRepoName,
-//   linkDeployName
-// ) {
-//   return `
-//         <article class="card">
-//           <div class="card-front">
-//             <h2 class="card-title">${item[cardName]}</h2>
-//             <img
-//               class="card-img"
-//               src=${item[imgName]}
-//               alt=${item[cardName]}
-//             />
-//             <div class="card-technologies">
-//             ${item[technologiesName]}
-//             </div>
-//             <span class="material-symbols-outlined"> keyboard_double_arrow_right </span>
-//           </div>
-//           <div class="card-back">
-//             <p>${item[descriptionName]}</p>
-//             <p class="card-origin">${item[originName]}</p>
-//             <div class="card-links">
-//               <a href=${item[linkRepoName]} target="_blank" rel="noopener noreferrer">
-//                 <img
-//                   src=${item[imgRepoName]}
-//                   alt=${item.repo}
-//                 />
-//               </a>
-//               <a href=${item[linkDeployName]} target="_blank" rel="noopener noreferrer">
-//               <img
-//                 src='https://res.cloudinary.com/dwsffp1eq/image/upload/v1683626612/Portfolio/open_in_new_liibm3.svg'
-//                 alt='open in new'
-//               />
-//             </a>
-//           </div>
-//           </div>
-//         </article>
-//       `;
-// }
+// Y finalmente con esta la integramos a la sección
+export function generateSection(array) {
+  return `    
+    <section class="card-flex-fluid">
+  ${generateCards(array).join('')}
+    </section>`;
+}
 
-// export function generateCardsArray(
-//   array,
-//   cardName,
-//   imgName,
-//   technologiesName,
-//   descriptionName,
-//   originName,
-//   linkRepoName,
-//   imgRepoName,
-//   linkDeployName
-// ) {
-//   return array.map((item) =>
-//     generateCard(
-//       item,
-//       cardName,
-//       imgName,
-//       technologiesName,
-//       descriptionName,
-//       originName,
-//       linkRepoName,
-//       imgRepoName,
-//       linkDeployName
-//     )
-//   );
-// }
-
-export default generateCards;
+export default generateSection;

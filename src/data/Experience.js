@@ -22,7 +22,7 @@ const experienceData = [
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Técnico de proyectos',
     description:
-      '- Beca Diputación Cáceres "Lazos que unen" y subvención "PIT" Junta de Extremadura<br /> - Gestionar proyectos técnicos a nivel nacional <br /> - Participar en el desarrollo de proyectos sociales <br /> - Diseñar material gráfico corporativo y aplicado a los proyectos en marcha',
+      '- Subvención "Lazos que unen" y "PIT"<br /> - Gestionar proyectos técnicos a nivel nacional <br /> - Participar en el desarrollo de proyectos sociales <br /> - Diseñar material gráfico corporativo',
     date: '2020 - 2022',
     ects: ''
   },
@@ -35,7 +35,7 @@ const experienceData = [
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683543022/Pa%C3%ADses/belgica_lhbvov.png',
     title: 'Asesor en Políticas EU y Comercio internacional',
     description:
-      '- Beca Diputación Cáceres "Lazos que unen" <br /> - Análisis de políticas comerciales, negociaciones y acuerdos comerciales <br /> - Ayudar en las actividades de comunicación e investigación <br /> - Asistir a reuniones, conferencias y eventos',
+      '- Subvención "Lazos que unen" <br /> - Análisis de políticas, negociaciones y acuerdos comerciales <br /> - Ayudar en las actividades de comunicación e investigación <br /> - Asistir a reuniones, conferencias y eventos',
     date: '2019 - 2020',
     ects: ''
   },
@@ -48,7 +48,7 @@ const experienceData = [
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
     title: 'Asistente del gerente de ventas de Europa',
     description:
-      '- Prácticas postgrado Universidat de Barcelona <br /> - Monitorear la implementación de las acciones de ventas y los resultados <br /> - Análisis de ventas, inventarios, cadena de valor y rentabilidad <br /> - Apoyo al control del área logística de Europa',
+      '- Prácticas postgrado Universidat de Barcelona <br /> - Monitorear las acciones y resultados de ventas <br /> - Análisis de inventarios, cadenas de valor y rentabilidad <br /> - Apoyo al control del área logística de Europa',
     date: '2018 - 2019',
     ects: ''
   },
@@ -72,7 +72,7 @@ const experienceData = [
     location: 'Cáceres, ES',
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
-    title: 'Administrativo',
+    title: 'Recepcionista y administrativo',
     description:
       '- Prácticas del grado de ADE <br /> - Responder y dirigir las llamadas telefónicas <br /> - Proporcionar apoyo general a los visitantes <br /> - Proporcionar información respondiendo a preguntas y solicitudes',
     date: '2016',
