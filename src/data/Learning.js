@@ -20,8 +20,8 @@ const learningData = [
     location: 'Online',
     country: 'España',
     flag: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683542606/Pa%C3%ADses/espana_pjmx7s.png',
-    title: 'Técnico Superior en Desarrollo de Aplicaciones Multiplataforma',
-    description: '',
+    title: 'Desarrollo de Aplicaciones Multiplataforma',
+    description: 'Título oficial de FP para crear y desarrollar aplicaciones para todo tipo de dispositivos',
     date: '2022 - Ongoing',
     ects: '2.000h'
   },
