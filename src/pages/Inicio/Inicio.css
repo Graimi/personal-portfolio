@@ -1,6 +1,6 @@
 /* Establecemos las propiedades para distribuir las cards de información */
 /* La idea original era con grid pero no he sido capaz de hacer que las cards saltaran con la pantalla */
-.home-flex {
+.home-flex-fluid {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -14,7 +14,10 @@
   /* Ya que no he sido capaz de hacer grid en la clase padre establezco un width común */
   display: flex;
   flex-direction: column;
-  width: 280px;
+  justify-content: space-around;
+  flex-grow: 1;
+  width: 270px;
+  max-width: 320px;
   height: auto;
   padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
@@ -23,16 +26,15 @@
 }
 
 /* Establecemos un margen extra a los títulos de las cards */
-.home-flex article h2 {
+.home-flex-fluid article h2 {
   padding-bottom: var(--pf-padding-title);
 }
 
 /* Definimos las propiedades para visualizar las cards de resumen de la info */
 .home-resume-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  /* grid-template-rows: 50% 50%; */
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   justify-content: center;
   gap: var(--pf-gap-card);
   overflow: hidden;
@@ -146,6 +148,7 @@
 /* Establecemos las diferentes grid areas */
 .home-entrepreneur-img {
   grid-area: img;
+  width: 50px;
 }
 
 .home-entrepreneur-role {

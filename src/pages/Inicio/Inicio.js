@@ -46,7 +46,7 @@ function Inicio() {
   return `
   <main>
     ${Title('Bienvenido a mi sitio web')}
-    <section class="home-flex">
+    <section class="home-flex-fluid">
     <article class="home-resume home-card">
       <h2>Resumen</h2>
       <div class="home-resume-grid">
