@@ -1,24 +1,30 @@
 import './Footer.css';
 
-function Footer({ rs1, rs2, rs3, rs4 }) {
+function Footer(item) {
   return `
-        <footer class="rrss">
-          <article class="rrss-logos">
-          <a href=${rs1.href} target=${rs1.target} rel=${rs1.rel}>
-            <img src=${rs1.src} alt=${rs1.alt} />
+        
+          
+          <a href=${item.href} target=${item.target} rel=${item.rel}>
+            <img src=${item.src} alt=${item.alt} />
           </a>
-          <a href=${rs2.href} target=${rs2.target} rel=${rs2.rel}>
-            <img src=${rs2.src} alt=${rs2.alt} />
-          </a>
-          <a href=${rs3.href} target=${rs3.target} rel=${rs3.rel}>
-            <img src=${rs3.src} alt=${rs3.alt} />
-          </a>
-          <a href=${rs4.href} target=${rs4.target} rel=${rs4.rel}>
-            <img src=${rs4.src} alt=${rs4.alt} />
-          </a>
-        </article>
-      </footer>
+        
+      
     `;
+}
+
+// Con esta función recorremos la data de los arrays
+function generateItems(array) {
+  return array.map((item) => Footer(item));
+}
+
+// Y finalmente con esta la integramos a la etiqueta
+export function generateFooter(array) {
+  return `    
+  <footer class="rrss">
+  <article class="rrss-logos">
+  ${generateItems(array).join('')}
+  </article>
+  </footer>`;
 }
 
 export default Footer;

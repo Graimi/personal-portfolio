@@ -1,7 +1,9 @@
 import './App.css';
+import Footer, { generateFooter } from './components/Footer/Footer';
 
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
+import footerData from './data/Footer';
 
 function App() {
   // Obtenemos el elemento app
@@ -11,6 +13,7 @@ function App() {
   // evitando de esta manera que se colapse la app sumándose contenido
   app.innerHTML = Header();
   app.innerHTML += Main();
+  app.innerHTML += generateFooter(footerData);
 }
 
 // Llamamos a la función App al cargar la página

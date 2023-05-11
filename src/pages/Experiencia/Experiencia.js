@@ -1,5 +1,3 @@
-import './Experiencia.css';
-
 import Title from '../../components/Title/Title';
 import experienceData from '../../data/Experience';
 import { generateSection } from '../../components/Card/Card';

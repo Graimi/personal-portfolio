@@ -1,7 +1,8 @@
 import './Header.css';
-import Footer from '../Footer/Footer';
+import Footer, { generateFooter } from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import Profile from '../Profile/Profile';
+import footerData from '../../data/Footer';
 
 function Header() {
   // Declaramos las variables para usar en el navbar
@@ -67,7 +68,7 @@ function Header() {
     'Jaime <br/> Flores Lujan'
   )}
   ${Navbar({ sct1, sct2, sct3, sct4 })}
-  ${Footer({ rs1, rs2, rs3, rs4 })}
+  ${generateFooter(footerData)}
   </header>`;
 }
 

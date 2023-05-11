@@ -1,12 +1,39 @@
 .glass {
-    /* Distribuimos el header y main */
-    display: flex;
-    flex-direction: row;
-    /* Damos las medidas que queremos que tenga la app */
-    width: 85%;
-    height: 90vh;
-    background: var(--pf-gradient-white);
-    border-radius: var(--pf-radius-container);
-    /* Obtenemos el efecto glass con esta propiedad */
-    backdrop-filter: blur(10px);
+  /* Distribuimos el header y main */
+  display: flex;
+  flex-direction: row;
+  /* Damos las medidas que queremos que tenga la app */
+  width: 85%;
+  height: 90vh;
+  background: var(--pf-gradient-white);
+  border-radius: var(--pf-radius-container);
+  /* Obtenemos el efecto glass con esta propiedad */
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+/* .glass footer {
+  display: none;
+} */
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .glass {
+    flex-direction: column;
   }
+
+  /* .glass footer {
+    display: flex;
+  } */
+}
+
+/* MOBILE DISPLAY */
+@media screen and (max-width: 376px) {
+  .glass {
+    flex-direction: column;
+  }
+
+  /* .glass footer {
+    display: flex;
+  } */
+}
