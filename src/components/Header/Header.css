@@ -25,18 +25,14 @@ header .rrss {
     height: min-content;
   }
 
+
   header .rrss {
     display: none;
   }
 }
 
 /* MOBILE DISPLAY */
+/* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
-  header {
-    /* flex-direction: row; */
-  }
-
-  header .rrss {
-    display: none;
-  }
+  
 }

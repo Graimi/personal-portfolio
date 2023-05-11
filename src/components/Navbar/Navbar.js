@@ -1,50 +1,33 @@
 import './Navbar.css';
 
-function Navbar({ sct1, sct2, sct3, sct4 }) {
-  return `<nav>
-    <ul>
+function Navbar(item) {
+  return `
       <li>
-        <a href=${sct1.href} class="nav_item">
+        <a href=${item.href} class="nav_item">
           <img
-            src=${sct1.src}
-            alt=${sct1.alt}
+            src=${item.src}
+            alt=${item.alt}
             class="nav_image"
           />
-          <h2>${sct1.name}</h2>
+          <h2>${item.name}</h2>
         </a>
       </li>
-      <li>
-        <a href=${sct2.href} class="nav_item">
-          <img
-            src=${sct2.src}
-            alt=${sct2.alt}
-            class="nav_image"
-          />
-          <h2>${sct2.name}</h2>
-        </a>
-      </li>
-      <li>
-      <a href=${sct3.href} class="nav_item">
-        <img
-          src=${sct3.src}
-          alt=${sct3.alt}
-          class="nav_image"
-        />
-        <h2>${sct3.name}</h2>
-      </a>
-    </li>
-    <li>
-    <a href=${sct4.href} class="nav_item">
-      <img
-        src=${sct4.src}
-        alt=${sct4.alt}
-        class="nav_image"
-      />
-      <h2>${sct4.name}</h2>
-    </a>
-  </li>
-    </ul>
-  </nav>`;
+      <li>`;
 }
 
-export default Navbar;
+// Con esta función recorremos la data de los arrays
+function generateItems(array) {
+  return array.map((item) => Navbar(item));
+}
+
+// Y finalmente con esta la integramos a la etiqueta
+function generateNavbar(data) {
+  return `
+    <nav>
+      <ul>
+        ${generateItems(data).join('')}
+      </ul>
+    </nav>`;
+}
+
+export default generateNavbar;

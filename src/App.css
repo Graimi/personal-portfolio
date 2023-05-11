@@ -12,6 +12,7 @@
   overflow: hidden;
 }
 
+/* Con esta propiedad bloqueamos la vista del footer, en el header hacemos visible cuando nos interesa */
 .glass footer {
   display: none;
 }
@@ -22,6 +23,7 @@
     flex-direction: column;
   }
 
+  /* Visibilizamos el footer para que aparezca al final, bloqueamos en el header el otro footer */
   .glass footer {
     display: flex;
   }
@@ -33,6 +35,7 @@
     flex-direction: column;
   }
 
+  /* Visibilizamos el footer para que aparezca al final, bloqueamos en el header el otro footer */
   .glass footer {
     display: flex;
   }

@@ -1,3 +1,4 @@
+// Alamacenamos los datos de las rrss
 const footerData = [
   {
     href: 'https://github.com/Graimi',
