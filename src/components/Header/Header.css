@@ -13,8 +13,11 @@ header {
   border-radius: var(--pf-radius-container);
 }
 
+/* Visualizamos por defecto el footer de la vista de pc */
 header .rrss {
   display: flex;
+  /* Le quitamos el margen por defecto porque lo estamos centrando con flex */
+  margin: 0;
 }
 
 /* TABLET DISPLAY */
@@ -25,7 +28,7 @@ header .rrss {
     height: min-content;
   }
 
-
+  /* Quitamos la visualización del footer del header */
   header .rrss {
     display: none;
   }
@@ -34,5 +37,14 @@ header .rrss {
 /* MOBILE DISPLAY */
 /* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
-  
+  header {
+    flex-direction: row;
+    width: 100%;
+    height: min-content;
+  }
+
+  /* Quitamos la visualización del footer del header */
+  header .rrss {
+    display: none;
+  }
 }

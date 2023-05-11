@@ -66,8 +66,8 @@
 
 /* Establecemos el tamaños de los logos */
 .proyect-technologies img {
-  width: 32px;
-  height: 32px;
+  width: var(--pf-img-small);
+  height: var(--pf-img-small);
 }
 
 /* Hemos obtenido la flecha de Google Fonts, la cargamos con las propiedades que he decidido */
@@ -103,10 +103,9 @@
   /* flex-direction: row-reverse; */
 }
 
-/* Damos las propiedades al logo de github */
+/* Damos las propiedades a los logos de los enlaces */
 .proyect-links img {
-  width: 32px;
-  /* padding-top: 10px; */
+  width: var(--pf-img-small);
 }
 
 /* Establecemos el efecto del hover para regresar el contenido desplazado */

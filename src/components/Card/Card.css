@@ -66,7 +66,7 @@
 
 /* Ajustamos el tamaño de la bandera */
 .card-flag {
-  width: 32px;
+  width: var(--pf-img-small);
 }
 
 /* Mentenemos los estilos del h de title pero le aplicamos un bold para dar más importancia*/
@@ -123,10 +123,9 @@
   /* flex-direction: row-reverse; */
 }
 
-/* Damos las propiedades al logo de github */
+/* Damos las propiedades a los logos de los enlaces */
 .card-links img {
-  width: 32px;
-  /* padding-top: 10px; */
+  width: var(--pf-img-small);
 }
 
 /* Establecemos el efecto del hover para regresar el contenido desplazado */

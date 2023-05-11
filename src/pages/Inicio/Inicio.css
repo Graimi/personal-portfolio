@@ -55,7 +55,7 @@
 
 /* Establecemos un tamaño adecuado para los iconos dentro de las cards resumen */
 .home-resume-info img {
-  width: 40%;
+  width: var(--pf-img-medium);
 }
 
 /* Cambiamos el color del texto de las cards resumen para darle más énfasis */
@@ -116,7 +116,7 @@
 
 /* Establecemos el width aquí para poder ordenar las img correctamente */
 .home-technologies-logos img {
-    width: 24px;
+    width: var(--pf-img-mini);
 }
 
 /* Establecemos una separación entre los dos elementos acorde al gap de cards */
@@ -148,7 +148,7 @@
 /* Establecemos las diferentes grid areas */
 .home-entrepreneur-img {
   grid-area: img;
-  width: 50px;
+  width: var(--pf-img-big);
 }
 
 .home-entrepreneur-role {

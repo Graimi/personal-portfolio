@@ -1,18 +1,17 @@
 /* Damos los estilos generales para desplegar correctamente los elementos */
 .rrss {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  height: 10%;
+  margin: var(--pf-margin-cta);
 }
 
 /* Estilos para alinear los iconos de las rrss con sus respectivos enlaces */
 .rrss-logos {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
-  width: fit-content;
-  height: 50px;
+  padding: var(--pf-padding-cta);
+  gap: var(--pf-gap-cta);
   background-color: var(--pf-color-brown-dark);
   background: var(--pf-gradient-brown);
   border-radius: var(--pf-radius-input);
@@ -20,7 +19,7 @@
 
 /* Estilamos los iconos de contacto del footer */
 .rrss-logos a {
-  width: 15%;
+  width: var(--pf-img-mini);
   border-radius: var(--pf-radius-img);
   transition: all 0.25s ease-in;
 }

@@ -28,6 +28,12 @@
   --pf-typography-h3: 20px;
   --pf-typography-p: 16px;
 
+  /* IMG SIZE 🟡*/
+  --pf-img-big: 64px;
+  --pf-img-medium: 40px;
+  --pf-img-small: 32px;
+  --pf-img-mini: 24px;
+
   /* LEADING 🟢*/
   --pf-typography-h1-leading: 1.2;
   --pf-typography-h2-leading: 1.2;
@@ -36,6 +42,7 @@
 
   /* MARGIN 🔴*/
   --pf-margin-container: 15px;
+  --pf-margin-cta: 10px;
   /* Determinar si hay */
   /* --pf-typography-margin-heading: 12px;
   --pf-typography-margin-body: 18px; */
@@ -46,14 +53,15 @@
   /* Ver si hay más de uno */
   --pf-padding-list: 15px;
   --pf-padding-title: 15px;
+  --pf-padding-cta: 10px;
 
   /* GAP 🔴*/
   --pf-gap-grid: 20px;
+  --pf-gap-cta: 12px;
   --pf-gap-card: 10px;
 
   /* Sin usar */
   --pf-gap-header: 16px;
-  --pf-gap-cta: 12px;
   --pf-gap-hero: 32px;
   --pf-gap-customer: 32px;
   --pf-gap-feature: 32px;

@@ -18,7 +18,7 @@ nav ul {
 
 /* Damos tamaño a los logos */
 .nav_image {
-  width: 15%;
+  width: var(--pf-img-mini);
 }
 
 /* Damos espacio entre los logos y el texto */
