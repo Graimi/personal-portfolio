@@ -6,7 +6,7 @@ header {
   justify-content: space-between;
   text-align: center;
   /* Fijamos un width en el que quepa el contenido */
-  width: 280px;
+  width: 300px;
   /* Estilamos el visual */
   padding: var(--pf-padding-container);
   background: var(--pf-gradient-white);
@@ -23,7 +23,7 @@ header .rrss {
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
   header {
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
     height: min-content;
   }
@@ -38,9 +38,10 @@ header .rrss {
 /* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
   header {
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
     height: min-content;
+    gap: var(--pf-gap-card);
   }
 
   /* Quitamos la visualización del footer del header */

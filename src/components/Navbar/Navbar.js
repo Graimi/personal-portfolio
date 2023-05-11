@@ -21,13 +21,16 @@ function generateItems(array) {
 }
 
 // Y finalmente con esta la integramos a la etiqueta
+// Aquí también integramos el hamburguer de la navbar
 function generateNavbar(data) {
   return `
-    <nav>
-      <ul>
-        ${generateItems(data).join('')}
-      </ul>
-    </nav>`;
+  <label class="bc__hamburguer__label" for="hamburger"><img src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683803169/Portfolio/menu-hamburguesa_1_dml1kx.png" alt="hamburguer"></label>
+  <input type="checkbox" name="bc__hamburguer" class="bc__hamburguer" id="hamburger" />
+  <nav>
+    <ul>
+      ${generateItems(data).join('')}
+    </ul>
+  </nav>`;
 }
 
 export default generateNavbar;

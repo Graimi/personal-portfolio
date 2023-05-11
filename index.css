@@ -42,7 +42,7 @@
 
   /* MARGIN 🔴*/
   --pf-margin-container: 15px;
-  --pf-margin-cta: 10px;
+  --pf-margin-cta: 20px;
   /* Determinar si hay */
   /* --pf-typography-margin-heading: 12px;
   --pf-typography-margin-body: 18px; */
@@ -57,6 +57,7 @@
 
   /* GAP 🔴*/
   --pf-gap-grid: 20px;
+  --pf-gap-list: 15px;
   --pf-gap-cta: 12px;
   --pf-gap-card: 10px;
 

@@ -4,3 +4,19 @@ main {
   margin: var(--pf-margin-container);
   overflow: auto;
 }
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  main {
+    /* Quitamos el margin para mejorar la visualización general */
+    margin: 0;
+  }
+}
+
+/* MOBILE DISPLAY */
+/* Ver si replicar tal cual de tablet */
+@media screen and (max-width: 376px) {
+  main {
+    margin: 0;
+  }
+}

@@ -1,10 +1,23 @@
+/* Diseño para quitar la hamburguesa, estamos en desktop first */
+.bc__hamburguer__label,
+.bc__hamburguer {
+  display: none;
+}
+
+.bc__hamburguer__label {
+  width: var(--pf-img-small);
+}
+
 nav {
   text-align: center;
 }
 
 /* Con esta propiedad fijamos los nav a la izquierda */
 nav ul {
+  display: flex;
+  flex-direction: column;
   padding: 0;
+  gap: var(--pf-gap-list);
 }
 
 /* Distribuimos correctamente y espaciamos los nav */
@@ -13,7 +26,7 @@ nav ul {
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  padding-bottom: 25px;
+  /* padding-bottom: 25px; */
 }
 
 /* Damos tamaño a los logos */
@@ -24,4 +37,32 @@ nav ul {
 /* Damos espacio entre los logos y el texto */
 .nav_item h2 {
   padding-left: var(--pf-padding-list);
+}
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .bc__hamburguer__label
+  /* .bc__hamburguer  */ {
+    display: block;
+  }
+
+  /* Por defecto la nav no se ve */
+  nav {
+    display: none;
+  }
+
+  /* CHECKED -> Aparece la nav */
+  .bc__hamburguer:checked + nav {
+    display: block;
+    padding: var(--bc__padding--big);
+  }
+
+  nav ul {
+    padding: inherit
+  }
+}
+
+/* MOBILE DISPLAY */
+/* Ver si replicar tal cual de tablet */
+@media screen and (max-width: 376px) {
 }

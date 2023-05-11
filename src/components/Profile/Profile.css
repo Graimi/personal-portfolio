@@ -1,8 +1,9 @@
 /* Estilamos y centramos la img */
 .profile img {
   margin: auto;
-  width: 50%;
-  border-radius: var(--pf-radius-img);
+  /* Damos medidas específicas */
+  width: 100px;
+  border-radius: 50px;
 }
 
 .profile h3 {
