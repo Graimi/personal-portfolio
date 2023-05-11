@@ -10,7 +10,8 @@ function Header() {
   return `<header>
   ${Profile(
     'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683570387/Portfolio/jaime_w6sze5.jpg',
-    'Jaime <br/> Flores Lujan'
+    'Jaime',
+    'Flores Luján'
   )}
   ${generateNavbar(navbarData)}
   ${generateFooter(footerData)}

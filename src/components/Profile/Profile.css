@@ -1,12 +1,46 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* flex-direction: column; */
+}
+
 /* Estilamos y centramos la img */
 .profile img {
-  margin: auto;
+  /* margin: auto; */
   /* Damos medidas específicas */
   width: 100px;
   border-radius: 50px;
 }
 
+.profile-surname {
+font-weight: 400;
+}
+
 .profile h3 {
   /* Metemos un poco de espacio para alinear con el main */
-  padding-top: 10px;
+  /* padding-top: 10px; */
+}
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+.profile {
+  flex-direction: row;
+}
+
+.profile img {
+  /* Damos medidas específicas */
+  width: 80px;
+}
+
+.profile h3 {
+text-align: left;
+}
+}
+
+/* MOBILE DISPLAY */
+/* Ver si replicar tal cual de tablet */
+@media screen and (max-width: 376px) {
 }

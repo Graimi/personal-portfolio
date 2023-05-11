@@ -1,19 +1,15 @@
 /* Diseño para quitar la hamburguesa, estamos en desktop first */
-.bc__hamburguer__label,
-.bc__hamburguer {
+.nav-hamburguer-label,
+.nav-hamburguer {
   display: none;
 }
 
-.bc__hamburguer__label {
-  width: var(--pf-img-small);
-}
-
-nav {
-  text-align: center;
+.nav-hamburguer-label {
+  width: var(--pf-img-mini);
 }
 
 /* Con esta propiedad fijamos los nav a la izquierda */
-nav ul {
+.nav-list {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -41,8 +37,8 @@ nav ul {
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
-  .bc__hamburguer__label
-  /* .bc__hamburguer  */ {
+  .nav-hamburguer-label
+  /* .nav-hamburguer  */ {
     display: block;
   }
 
@@ -52,12 +48,12 @@ nav ul {
   }
 
   /* CHECKED -> Aparece la nav */
-  .bc__hamburguer:checked + nav {
-    display: block;
+  .nav-hamburguer:checked + nav {
+    display: flex;
     padding: var(--bc__padding--big);
   }
 
-  nav ul {
+  .nav-list {
     padding: inherit
   }
 }

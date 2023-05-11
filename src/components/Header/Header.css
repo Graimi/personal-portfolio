@@ -9,6 +9,7 @@ header {
   width: 300px;
   /* Estilamos el visual */
   padding: var(--pf-padding-container);
+  gap: var(--pf-gap-list);
   background: var(--pf-gradient-white);
   border-radius: var(--pf-radius-container);
 }
@@ -23,9 +24,10 @@ header .rrss {
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
   header {
-    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
     width: 100%;
     height: min-content;
+    /* justify-content: center; */
   }
 
   /* Quitamos la visualización del footer del header */

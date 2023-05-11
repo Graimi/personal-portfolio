@@ -11,8 +11,7 @@ function Navbar(item) {
           />
           <h2>${item.name}</h2>
         </a>
-      </li>
-      <li>`;
+      </li>`;
 }
 
 // Con esta función recorremos la data de los arrays
@@ -24,10 +23,10 @@ function generateItems(array) {
 // Aquí también integramos el hamburguer de la navbar
 function generateNavbar(data) {
   return `
-  <label class="bc__hamburguer__label" for="hamburger"><img src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683803169/Portfolio/menu-hamburguesa_1_dml1kx.png" alt="hamburguer"></label>
-  <input type="checkbox" name="bc__hamburguer" class="bc__hamburguer" id="hamburger" />
+  <label class="nav-hamburguer-label" for="hamburger"><img src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683803169/Portfolio/menu-hamburguesa_1_dml1kx.png" alt="hamburguer"></label>
+  <input type="checkbox" name="nav-hamburguer" class="nav-hamburguer" id="hamburger" />
   <nav>
-    <ul>
+    <ul class="nav-list">
       ${generateItems(data).join('')}
     </ul>
   </nav>`;
