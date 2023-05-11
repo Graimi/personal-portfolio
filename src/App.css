@@ -12,9 +12,9 @@
   overflow: hidden;
 }
 
-/* .glass footer {
+.glass footer {
   display: none;
-} */
+}
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -22,9 +22,9 @@
     flex-direction: column;
   }
 
-  /* .glass footer {
+  .glass footer {
     display: flex;
-  } */
+  }
 }
 
 /* MOBILE DISPLAY */
@@ -33,7 +33,7 @@
     flex-direction: column;
   }
 
-  /* .glass footer {
+  .glass footer {
     display: flex;
-  } */
+  }
 }

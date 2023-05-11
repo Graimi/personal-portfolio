@@ -13,9 +13,9 @@ header {
   border-radius: var(--pf-radius-container);
 }
 
-/* header .rrss {
+header .rrss {
   display: flex;
-} */
+}
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
@@ -25,9 +25,9 @@ header {
     height: min-content;
   }
 
-  /* header .rrss {
+  header .rrss {
     display: none;
-  } */
+  }
 }
 
 /* MOBILE DISPLAY */
@@ -36,7 +36,7 @@ header {
     /* flex-direction: row; */
   }
 
-  /* header .rrss {
+  header .rrss {
     display: none;
-  } */
+  }
 }
