@@ -1,13 +1,16 @@
 import './Profile.css';
 
-function Profile(src, name, surname) {
-  return `<div class="profile">
-    <img src=${src} alt="profile" />
+// Template para crear el profile
+function Profile(photo, name, surname) {
+  return `
+  <div class="profile">
+    <img src="${photo}" alt="profile" />
     <div>
-    <h3 class="profile-name"> ${name} </h3>
-    <h3 class="profile-surname"> ${surname} </h3>
+      <h3 class="profile-name">${name}</h3>
+      <h3 class="profile-surname">${surname}</h3>
     </div>
-  </div>`;
+  </div>
+  `;
 }
 
 export default Profile;

@@ -4,15 +4,12 @@ import Profile from '../Profile/Profile';
 import footerData from '../../data/Footer';
 import generateNavbar from '../Navbar/Navbar';
 import navbarData from '../../data/Navbar';
+import profileData from '../../data/Profile';
 
 function Header() {
   // Añadimos las composiciones del header
   return `<header>
-  ${Profile(
-    'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683570387/Portfolio/jaime_w6sze5.jpg',
-    'Jaime',
-    'Flores Luján'
-  )}
+  ${Profile(profileData.photo, profileData.name, profileData.surname)}
   ${generateNavbar(navbarData)}
   ${generateFooter(footerData)}
   </header>`;
