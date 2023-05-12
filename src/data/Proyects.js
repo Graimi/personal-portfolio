@@ -20,6 +20,7 @@
 //     ]
 //   }
 
+// Recogemos los datos relativos a las proyectos realizados
 const proyectsData = [
   {
     proyect: 'App NASA',

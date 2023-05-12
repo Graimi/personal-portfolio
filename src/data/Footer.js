@@ -1,4 +1,4 @@
-// Alamacenamos los datos de las rrss
+// Recogemos los datos relativos a las RRSS
 const footerData = [
   {
     href: 'https://github.com/Graimi',

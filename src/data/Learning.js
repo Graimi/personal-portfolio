@@ -12,6 +12,7 @@
 //     ects: ''
 //   },
 
+// Recogemos los datos relativos a las formaciones
 const learningData = [
   {
     institution: 'Ilerna FP',

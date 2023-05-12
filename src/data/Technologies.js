@@ -1,3 +1,5 @@
+// Recogemos los datos relativos al nivel de competencia de las diferentes tecnologías
+
 export const basicData = [
   {
     technology: 'PYTHON',

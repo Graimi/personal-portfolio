@@ -91,9 +91,9 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [] Progectos <br>
 
 <li> [] General </li>
-[] Carpetas organizadas <br>
-[] Componentes separados <br>
+[✅] Carpetas organizadas <br>
+[✅] Componentes separados <br>
 [] Código comentado <br>
-[] Data comentado <br>
+[✅] Data comentado y repasado <br>
 [] Repasar <br>
 </ol>

@@ -12,6 +12,7 @@
 //     ects: ''
 //   }
 
+// Recogemos los datos relativos a la experiencia
 const experienceData = [
   {
     institution: 'Fundación Cooprado',
@@ -81,5 +82,3 @@ const experienceData = [
 ];
 
 export default experienceData;
-
-/* Asesor en Políticas EU y Comercio internacional */
