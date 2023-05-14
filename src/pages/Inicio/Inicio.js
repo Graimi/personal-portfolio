@@ -48,7 +48,7 @@ function Inicio() {
     ${Title('Bienvenido a mi sitio web')}
     <section class="home-flex-fluid">
     <article class="home-resume home-card">
-      <h2>Resumen</h2>
+      <h2 class="home-card-title">Resumen</h2>
       <div class="home-resume-grid">
         <div class="home-resume-info">
           <img
@@ -86,7 +86,7 @@ function Inicio() {
     </article>
 
     <article class="home-technologies home-card">
-      <h2>Tecnologías</h2>
+      <h2 class="home-card-title">Tecnologías</h2>
       ${sliderTemplate('Básico', 25)}
       <div class="home-technologies-logos">
       ${technologiesItems(basicData).join('')}
@@ -105,7 +105,7 @@ function Inicio() {
 
     <article class="home-half">
       <article class="home-languages home-card">
-        <h2>Idiomas</h2>
+        <h2 class="home-card-title">Idiomas</h2>
         <div class="home-languages-language">
         ${sliderTemplate('Español', 100)}
         </div>
@@ -118,7 +118,7 @@ function Inicio() {
       </article>
 
       <article class="home-more home-card">
-        <h2>Emprendimiento</h2>
+        <h2 class="home-card-title">Emprendimiento</h2>
         <div class="home-entrepreneur">
           <img
             class="home-entrepreneur-img"

@@ -61,4 +61,23 @@
 /* MOBILE DISPLAY */
 /* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
+  .nav-hamburguer-label
+  /* .nav-hamburguer  */ {
+    display: block;
+  }
+
+  /* Por defecto la nav no se ve */
+  nav {
+    display: none;
+  }
+
+  /* CHECKED -> Aparece la nav */
+  .nav-hamburguer:checked + nav {
+    display: flex;
+    padding: var(--bc__padding--big);
+  }
+
+  .nav-list {
+    padding: inherit
+  }
 }

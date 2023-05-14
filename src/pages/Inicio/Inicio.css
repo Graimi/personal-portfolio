@@ -25,8 +25,10 @@
   border-radius: var(--pf-radius-card);
 }
 
-/* Establecemos un margen extra a los títulos de las cards */
-.home-flex-fluid article h2 {
+/* Estilos específicos para los títulos de las cards */
+.home-card-title {
+  font-weight: bold;
+  /* Establecemos un padding extra a los títulos de las cards */
   padding-bottom: var(--pf-padding-title);
 }
 

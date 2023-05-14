@@ -77,18 +77,18 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 
 <li> [] Componentes finalizados y comentados </li>
 [] Card <br>
-[] Footer <br>
+[✅] Footer <br>
 [] Header <br>
 [] Main <br>
 [] Navbar <br>
 [✅] Profile <br>
-[] Title <br>
+[✅] Title <br>
 
 <li> [] Pages finalizadas y comentadas </li>
 [] Experiencia <br>
 [] Formación <br>
 [] Inicio <br>
-[] Progectos <br>
+[] Proyectos <br>
 
 <li> [] General </li>
 [✅] Carpetas organizadas <br>

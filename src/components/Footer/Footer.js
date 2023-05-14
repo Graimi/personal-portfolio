@@ -1,5 +1,6 @@
 import './Footer.css';
 
+// Creamos el template para cada elemento del footer
 function Footer(item) {
   return `
     <a href=${item.href} target=${item.target} rel=${item.rel}>
@@ -8,7 +9,7 @@ function Footer(item) {
   `;
 }
 
-// Con esta función recorremos la data de los arrays
+// Con esta función recorremos la data de los arrays de las rrss
 function generateItems(array) {
   return array.map((item) => Footer(item));
 }

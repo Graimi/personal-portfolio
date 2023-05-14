@@ -14,10 +14,6 @@
     var(--pf-color-brown-light)
   );
 
-  /* BORDER COLOR 🔴*/
-  /* Determinar si hay
-  --pf-color-border: var(--rc-color-n-100); */
-
   /* TYPOGRAPHY TYPE 🟢*/
   --pf-typography-heading: 'Roboto Condensed', sans-serif;
   --pf-typography-body: 'Ubuntu', sans-serif;
@@ -55,19 +51,11 @@
   --pf-padding-title: 15px;
   --pf-padding-cta: 10px;
 
-  /* GAP 🔴*/
+  /* GAP 🟡*/
   --pf-gap-grid: 20px;
   --pf-gap-list: 20px;
   --pf-gap-cta: 12px;
   --pf-gap-card: 10px;
-
-  /* Sin usar */
-  --pf-gap-header: 16px;
-  --pf-gap-hero: 32px;
-  --pf-gap-customer: 32px;
-  --pf-gap-feature: 32px;
-  --pf-gap-pricing: 32px;
-  --pf-gap-testimonial: 48px;
 
   /* BORDER RADIUS 🟡*/
   --pf-radius-container: 32px;

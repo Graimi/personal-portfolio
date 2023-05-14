@@ -1,5 +1,6 @@
+/* Estilamos el contenedor del title*/
 .title {
-  /* Con la siguiente propiedad haremos dinámico el contenido del componente*/
+  /* Con la siguiente propiedad haremos dinámico el width para limitar el title-decoration*/
   width: fit-content;
   padding-bottom: var(--pf-padding-container);
 }
@@ -10,4 +11,20 @@
   border: none;
   border-radius: var(--pf-radius-input);
   cursor: context-menu;
+}
+
+/* TABLET DISPLAY */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  /* Reducimos el tamaño de la fuente para que no se exceda */
+  .title-text {
+    font-size: calc(var(--pf-typography-h1) - 5px);
+  }
+}
+
+/* MOBILE DISPLAY */
+@media screen and (max-width: 376px) {
+  /* Reducimos el tamaño de la fuente para que no se exceda */
+  .title-text {
+    font-size: calc(var(--pf-typography-h1) - 10px);
+  }
 }
