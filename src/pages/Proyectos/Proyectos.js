@@ -3,8 +3,11 @@ import './Proyectos.css';
 import Title from '../../components/Title/Title';
 import proyectsData from '../../data/Proyects';
 
+// Creamos la función común para lanzar el resto de funciones de proyectos
 function Proyectos() {
+  // Con esta función recorremos la data de los arrays
   const proyectItems = proyectsData.map((item) => {
+    // Creamos la función para recorrer el array de las diferentes tecnologías usadas por proyecto
     const technologiesItems = item.technologies.map((technology) => {
       return `
         <img
@@ -14,6 +17,7 @@ function Proyectos() {
       `;
     });
 
+    // Establecemos el template de cada proyecto
     return `
     <article class="proyect">
       <div class="proyect-front">
@@ -50,14 +54,15 @@ function Proyectos() {
   `;
   });
 
+  // Pasamos el return de función Proyectos con el template de la página
   return `
   <main>
     ${Title('Mis proyectos')}
-    <section class="proyect-flex-fluid">
-    ${proyectItems.join('')}
-  </section>
-    </main>
-    `;
+      <section class="proyect-flex-fluid">
+        ${proyectItems.join('')}
+      </section>
+  </main>
+  `;
 }
 
 export default Proyectos;

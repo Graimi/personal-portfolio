@@ -1,25 +1,22 @@
-/* Establecemos las propiedades para distribuir las cards de información */
-/* La idea original era con grid pero no he sido capaz de hacer que las cards saltaran con la pantalla */
+/* Las diferentes cards se alinearan con la siguiente configuración */
 .home-flex-fluid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  justify-items: center;
+  justify-content: center;
   text-align: center;
   gap: var(--pf-gap-flex);
 }
 
 /* Establecemos los diseños generales y comunes para las cards*/
 .home-card {
-  /* Ya que no he sido capaz de hacer grid en la clase padre establezco un width común */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   /* Es muy importante esta propiedad para que crezcan las cards */
   flex-grow: 1;
+  /* Establecemos los tamaños de las cards */
   width: 270px;
   max-width: 320px;
-  height: auto;
   padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
   border: var(--pf-border-card-style);
@@ -33,6 +30,36 @@
   padding-bottom: var(--pf-padding-title);
 }
 
+/* Diseños generales para los slider */
+.slider {
+  /* Establecemos esta propiedad para quitar los estilos por defecto */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Diseños para la barrita */
+  width: max-content;
+  height: 5px;
+  background-color: var(--pf-color-brown-medium);
+  outline: none;
+  /* Le damos la forma circular */
+  border-radius: var(--pf-radius-input);
+}
+
+/* Diseños para el círculo del slider */
+.slider::-webkit-slider-thumb {
+  /* Establecemos esta propiedad para quitar los estilos por defecto */
+  appearance: none;
+  -webkit-appearance: none;
+  /* Diseños para el thumb */
+  width: 15px;
+  height: 15px;
+  background: var(--pf-color-brown-light);
+  /* Le damos la forma circular */
+  border-radius: var(--pf-radius-input);
+  /* Hacemos que no cambie el cursor */
+  cursor: inherit;
+}
+
+/* - RESUMEN - */
 /* Definimos las propiedades para visualizar las cards de resumen de la info */
 .home-resume-grid {
   display: grid;
@@ -63,12 +90,11 @@
 
 /* Cambiamos el color del texto de las cards resumen para darle más énfasis */
 .home-resume-info p,
-.home-resume-info h1,
-.home-resume-info h2,
-.home-resume-info h3 {
+.home-resume-info h1 {
   color: var(--pf-color-beige);
 }
 
+/* - TECNOLOGIAS - */
 /* Diseños para la card de tecnologia */
 .home-technologies {
   display: flex;
@@ -77,36 +103,7 @@
   gap: var(--pf-gap-card);
 }
 
-/* Diseños para el slider */
-.slider {
-  /* Establecemos esta propiedad para quitar los estilos por defecto */
-  appearance: none;
-  -webkit-appearance: none;
-  /* Diseños para la barrita */
-  width: max-content;
-  height: 5px;
-  background-color: var(--pf-color-brown-medium);
-  outline: none;
-  /* Le damos la forma circular */
-  border-radius: var(--pf-radius-input);
-}
-
-/* Diseños para el círculo del slider */
-.slider::-webkit-slider-thumb {
-  /* Establecemos esta propiedad para quitar los estilos por defecto */
-  appearance: none;
-  -webkit-appearance: none;
-  /* Diseños para el thumb */
-  width: 20px;
-  height: 20px;
-  background: var(--pf-color-brown-light);
-  /* Le damos la forma circular */
-  border-radius: var(--pf-radius-input);
-  /* Hacemos que no cambie el cursor */
-  cursor: inherit;
-}
-
-/* Definimos la distribución y el tamaño de los logos contenidos en tecnología */
+/* Definimos la distribución de los container de los logos contenidos en tecnología */
 .home-technologies-logos {
   display: inline-flex;
   flex-wrap: wrap;
@@ -117,12 +114,14 @@
   padding-bottom: var(--pf-padding-list);
 }
 
-/* Establecemos el width aquí para poder ordenar las img correctamente */
+/* Establecemos el tamaño de los logos */
 .home-technologies-logos img {
   width: var(--pf-img-mini);
 }
 
-/* Establecemos una separación entre los dos elementos acorde al gap de cards */
+/* - IDIOMAS - */
+/* Hemos organizado las cards de idiomas y emprendimiento en un div común por su tamaño, 
+establecemos una separación entre los dos elementos acorde al gap de cards */
 .home-languages {
   margin-bottom: var(--pf-gap-card);
 }
@@ -134,42 +133,43 @@
   align-items: center;
 }
 
+/* - EMPRENDIMIENTO - */
 /* Diseñamos la card de emprendimiento con un grid */
 .home-entrepreneur {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto auto;
   grid-template-areas:
-    'img role role'
-    'img date date'
+    'img info info'
+    'img info info'
     'description description description'
     'remarkable remarkable remarkable';
   align-items: center;
   text-align: justify;
   gap: var(--pf-gap-card);
 }
+
 /* Establecemos las diferentes grid areas */
 .home-entrepreneur-img {
   grid-area: img;
-  width: var(--pf-img-big);
+  width: fit-content;
 }
 
-.home-entrepreneur-role {
-  grid-area: role;
+.home-entrepreneur-info {
+  grid-area: info;
 }
 
+/* Cambiamos el estilo de la fuente a la fecha */
 .home-entrepreneur-date {
-  grid-area: date;
-  /* Damos efecto al texto con la cursiva */
   font-style: italic;
 }
 
+/* Damos propiedades a la descripción del emprendimiento */
 .home-entrepreneur-description {
   grid-area: description;
-  /* font-style: italic; */
   text-align: justify;
   /* Establecemos un border a modo de separador de info*/
-  border-bottom: var(--pf-color-brown-medium) solid 2px;
+  border-bottom: solid 2px var(--pf-color-brown-medium);
   /* Se añade este padding para dar espacio al border insertado */
   padding-bottom: 10px;
 }

@@ -6,6 +6,7 @@ import experienceData from '../../data/Experience';
 import learningData from '../../data/Learning';
 import { advanceData, basicData, mediumData } from '../../data/Technologies';
 
+// Creamos la función común para lanzar el resto de funciones de inicio
 function Inicio() {
   // Creamos la siguiente función para contar de manera dinámica los diferentes cards que conforman el portfolio
   function itemCounter(item) {
@@ -43,6 +44,7 @@ function Inicio() {
     });
   }
 
+  // Pasamos el return de función Inicio con el template de la página
   return `
   <main>
     ${Title('Bienvenido a mi sitio web')}
@@ -125,8 +127,10 @@ function Inicio() {
             src="https://res.cloudinary.com/dwsffp1eq/image/upload/v1683363973/logos/hermi_q1jivy.png"
             alt="hermi"
           />
+          <div class="home-entrepreneur-info">
           <h3 class="home-entrepreneur-role">Cofundador proyecto</h3>
           <p class="home-entrepreneur-date">Proyecto inactivo</p>
+          </div>
           <a
             class="home-entrepreneur-remarkable"
             href="https://www.elperiodicoextremadura.com/caceres-local/2022/07/20/plataforma-caceres-impulsa-da-empujon-68547740.html"

@@ -78,10 +78,10 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Profile <br>
 [✅] Title <br>
 
-<li> [] Pages finalizadas y comentadas </li>
-[] Experiencia <br>
-[] Formación <br>
-[] Inicio <br>
+<li> [✅] Pages finalizadas y comentadas </li>
+[✅] Experiencia <br>
+[✅] Formación <br>
+[✅] Inicio <br>
 [✅] Proyectos <br>
 
 <li> [] General </li>
