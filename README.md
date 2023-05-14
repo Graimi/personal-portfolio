@@ -69,18 +69,12 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Pages <br>
 [✅] SPA routed <br>
 
-<li> [] Proyectos </li>
-[✅] Checar las cards de proyectos, ver si hacer mas anchas o largas cuando se han las medias queries <br>
-[✅] El título del proyecto en h2 o h3 <br>
-[] Aplicar padding <br>
-<br>
-
-<li> [] Componentes finalizados y comentados </li>
-[] Card <br>
+<li> [✅] Componentes finalizados y comentados </li>
+[✅] Card <br>
 [✅] Footer <br>
 [✅] Header <br>
 [✅] Main <br>
-[] Navbar <br>
+[✅] Navbar <br>
 [✅] Profile <br>
 [✅] Title <br>
 
@@ -88,7 +82,7 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [] Experiencia <br>
 [] Formación <br>
 [] Inicio <br>
-[] Proyectos <br>
+[✅] Proyectos <br>
 
 <li> [] General </li>
 [✅] Carpetas organizadas <br>

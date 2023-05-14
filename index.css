@@ -52,8 +52,7 @@
   --pf-padding-cta: 10px;
 
   /* GAP 🟡*/
-  --pf-gap-grid: 20px;
-  --pf-gap-list: 20px;
+  --pf-gap-flex: 20px;
   --pf-gap-cta: 12px;
   --pf-gap-card: 10px;
 

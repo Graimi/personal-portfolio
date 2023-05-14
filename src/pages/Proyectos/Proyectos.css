@@ -3,40 +3,44 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--pf-gap-grid);
+  gap: var(--pf-gap-flex);
 }
 
 /* Establecemos los estilos que tendrán en común las cards */
 .proyect {
+  /* Con eso mantenemos la visualización de la card */
   position: relative;
-    /* Es muy importante esta propiedad para que crezcan las cards */
-    flex-grow: 1;
-  /* Establecemos unas medidas que permitan ver todo el contenido */
-  width: 210px;
-  max-width: 260px;
-  height: 320px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* Es muy importante esta propiedad para que crezcan las cards */
+  flex-grow: 1;
+  /* Establecemos unas medidas que permitan ver todo el contenido */
+  width: 210px;
+  max-width: 260px;
+  height: 350px;
   outline: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
-  padding: 16px;
+  /* En base al display de ambas caras, este padding será el que se aplique al back */
+  padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
   /* Ocultamos para que solo se vea una de las caras */
   overflow: hidden;
 }
 
+/* Retocamos la cara principal de las cards */
+/* Al ser un absolute tenemos que aplicar propiedades "repetidas" */
 .proyect-front {
-  /* Hemos usado absolute para posicionar correctamente la card, 
-  usar esta propiedad implica retocar correctamente todo, no vale con el flex*/
+  /* Hemos usado absolute para posicionar correctamente la card */
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  gap: 15px;
-  /* Con esta propiedad evitamos que se descentre el contenido */
-  /* left: 0; */
+  /* Obligamos a que el front se distribuya al total de la card */
+  width: 100%;
+  height: 100%;
+  padding: var(--pf-padding-card);
   /* Establecemos el efecto */
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -50,8 +54,7 @@
 /* Establecemos las propiedades de la img del proyecto */
 .proyect-img {
   border-radius: var(--pf-radius-img);
-  /* width: 170px; */
-  height: 110px;
+  height: 35%;
 }
 
 /* Distribuimos eficientemente los logos de las tecnologías */
@@ -60,8 +63,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 0 16px;
+  gap: var(--pf-gap-card);
 }
 
 /* Establecemos el tamaños de los logos */
@@ -77,33 +79,33 @@
 
 /* Establecemos el efecto del hover para desplazar el contenido */
 .proyect:hover .proyect-front {
-    /* Damos un efecto extra al añadir ese 20% */
-    transform: translateX(-200%);
-  }
+  transform: translateX(-200%);
+}
 
 /* Gestionamos los estilos de la parte back de la card, donde irá la descripción del proyecto */
 .proyect-back {
-    /* De base mantenemos la parte trasera del back con el translate para que no se vea */
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  gap: var(--pf-gap-card);
+  /* De base mantenemos la parte trasera del back con el translate para que no se vea */
   transform: translateX(200%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  text-align: justify;
-  gap: var(--pf-gap-grid);
 }
 
+/* Cambiamos el estilo de la fuente del origen del proyecto */
 .proyect-origin {
   font-style: italic;
-  padding-top: 10px;
 }
 
+/* Damos estilos al contenedor de los links del proyecto */
 .proyect-links {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding-top: 10px;
-  /* flex-direction: row-reverse; */
+  gap: var(--pf-gap-card);
 }
 
-/* Damos las propiedades a los logos de los enlaces */
+/* Damos estilos a los logos de los links */
 .proyect-links img {
   width: var(--pf-img-small);
 }

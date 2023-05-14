@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--pf-gap-grid);
+  gap: var(--pf-gap-flex);
 }
 
 /* Establecemos los estilos que tendrán en común las cards */
@@ -21,27 +21,26 @@
   height: 350px;
   outline: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
-  padding: 16px;
+  /* En base al display de ambas caras, este padding será el que se aplique al back */
+  padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
   /* Ocultamos para que solo se vea una de las caras */
   overflow: hidden;
 }
 
+/* Retocamos la cara principal de las cards */
+/* Al ser un absolute tenemos que aplicar propiedades "repetidas" */
 .card-front {
-  /* Hemos usado absolute para posicionar correctamente la card, 
-    usar esta propiedad implica retocar correctamente todo, no vale con el flex*/
+  /* Hemos usado absolute para posicionar correctamente la card */
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* gap: 15px; */
-  width: 85%;
-  /* width: fit-content; */
-  height: 90%;
-  /* height: fit-content; */
-  /* Con esta propiedad evitamos que se descentre el contenido */
-  /* left: 0; */
+  /* Obligamos a que el front se distribuya al total de la card */
+  width: 100%;
+  height: 100%;
+  padding: var(--pf-padding-card);
   /* Establecemos el efecto */
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
@@ -52,24 +51,21 @@
   text-align: center;
 }
 
-.card-technologies {
-  display: none;
-}
-
 /* Establecemos las propiedades de la img del cardo */
 .card-img {
   border-radius: var(--pf-radius-img);
   /* Con los max somos capaces de organizar como crecen los logos */
+  /* Ajustamos unas medidas que se ajusten a los diferentes logos */
   max-width: 190px;
   max-height: 120px;
 }
 
-/* Ajustamos el tamaño de la bandera */
+/* Ajustamos el tamaño del icono de la bandera */
 .card-flag {
   width: var(--pf-img-small);
 }
 
-/* Mentenemos los estilos del h de title pero le aplicamos un bold para dar más importancia*/
+/* Centramos el texto de la clase*/
 .card-title {
   text-align: center;
 }
@@ -85,28 +81,23 @@
   transform: translateX(-200%);
 }
 
-/* Gestionamos los estilos de la parte back de la card, donde irá la descripción del cardo */
+/* Gestionamos los estilos de la parte back de la card, donde irá la descripción del card */
 .card-back {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* align-content: flex-end; */
-  /* width: 90%; */
-  /* height: 0%; */
-  /* Es importante que sea un 200% para que no se vea nada de la otra card */
+  text-align: justify;
+  gap: var(--pf-gap-card);
+  /* De base mantenemos la parte trasera del back con el translate para que no se vea */
   transform: translateX(200%);
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-  /* text-align: justify; */
-  gap: var(--pf-gap-card);
-  /* bottom: -100px; */
 }
 
-/* Damos un estilo de cursiva a la ubicación */
+/* Cambiamos el estilo de la fuente a la ubicación */
 .card-location {
   font-style: italic;
 }
 
+/* Estilamos la descripción */
 .card-description {
   /* Establecemos un border a modo de separador de info*/
   border-bottom: var(--pf-color-brown-medium) solid 2px;
@@ -118,12 +109,10 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  padding-bottom: 10px;
-  /* flex-direction: row-reverse; */
+  gap: var(--pf-gap-card);
 }
 
-/* Damos las propiedades a los logos de los enlaces */
+/* Establecemos los logos de los enlaces */
 .card-links img {
   width: var(--pf-img-small);
 }

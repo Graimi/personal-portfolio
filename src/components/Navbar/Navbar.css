@@ -15,7 +15,7 @@
   flex-direction: column;
   /* Con esta propiedad fijamos los nav a la izquierda */
   padding: 0;
-  gap: var(--pf-gap-list);
+  gap: var(--pf-gap-flex);
 }
 
 /* Distribuimos correctamente y espaciamos los nav gracias al flex*/
