@@ -7,7 +7,7 @@
 }
 
 /* Las medidas de esta img son únicas y específicas */
-.profile img {
+.profile-img {
   width: 100px;
   border-radius: 50px;
 }
@@ -25,7 +25,7 @@
   }
 
   /* Damos medidas específicas */
-  .profile img {
+  .profile-img {
     width: 80px;
   }
 
@@ -43,7 +43,7 @@
   }
 
   /* Damos medidas específicas */
-  .profile img {
+  .profile-img {
     width: 80px;
   }
 

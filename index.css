@@ -65,6 +65,9 @@
 
   /* BORDER WIDTH 🟡*/
   --pf-border-width-card: 2px;
+
+  /* BORDER STYLE 🟡*/
+  --pf-border-card-style: var(--pf-border-width-card) solid var(--pf-color-brown-light);
 }
 
 /* Box sizing rules */

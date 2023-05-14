@@ -21,7 +21,7 @@
   height: auto;
   padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
-  border: var(--pf-border-width-card) solid var(--pf-color-brown-light);
+  outline: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
 }
 

@@ -6,8 +6,8 @@ import generateNavbar from '../Navbar/Navbar';
 import navbarData from '../../data/Navbar';
 import profileData from '../../data/Profile';
 
+// Con la siguiente función añadimos las diferentes composiciones del header
 function Header() {
-  // Añadimos las composiciones del header
   return `<header>
   ${Profile(profileData.photo, profileData.name, profileData.surname)}
   ${generateNavbar(navbarData)}

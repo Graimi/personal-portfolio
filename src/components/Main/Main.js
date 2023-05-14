@@ -20,7 +20,6 @@ function Main() {
       return Experiencia();
     case 'learning':
       return Formacion();
-
     default:
       return Inicio();
   }

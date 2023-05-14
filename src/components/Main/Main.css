@@ -1,14 +1,15 @@
+/* Aplicamos las propiedades al main */
 main {
-  width: 100%;
   padding: var(--pf-padding-container);
+  /* Aplicamos este margin para mejorar la visualización del scroll */
   margin: var(--pf-margin-container);
   overflow: auto;
 }
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  /* Quitamos el margin para mejorar la visualización del scroll */
   main {
-    /* Quitamos el margin para mejorar la visualización general */
     margin: 0;
   }
 }
@@ -16,6 +17,7 @@ main {
 /* MOBILE DISPLAY */
 /* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
+  /* Quitamos el margin para mejorar la visualización del scroll */
   main {
     margin: 0;
   }

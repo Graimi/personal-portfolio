@@ -1,3 +1,4 @@
+/* Damos los diferentes estilos al header */
 header {
   /* Centramos y distribuímos los diferentes elementos que compondrán el header */
   display: flex;
@@ -17,17 +18,13 @@ header {
 /* Visualizamos por defecto el footer de la vista de pc */
 header .rrss {
   display: flex;
-  /* Le quitamos el margen por defecto porque lo estamos centrando con flex */
-  margin: 0;
 }
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  /* Adaptamos el contenido del header a toda su extensión */
   header {
-    /* flex-direction: row-reverse; */
     width: 100%;
-    height: min-content;
-    /* justify-content: center; */
   }
 
   /* Quitamos la visualización del footer del header */
@@ -37,13 +34,10 @@ header .rrss {
 }
 
 /* MOBILE DISPLAY */
-/* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
+  /* Adaptamos el contenido del header a toda su extensión */
   header {
-    /* flex-direction: row; */
     width: 100%;
-    height: min-content;
-    gap: var(--pf-gap-card);
   }
 
   /* Quitamos la visualización del footer del header */

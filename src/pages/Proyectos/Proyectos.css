@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 2px solid var(--pf-color-brown-light);
+  outline: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
   padding: 16px;
   background: var(--pf-color-beige);

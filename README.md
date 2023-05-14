@@ -78,8 +78,8 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 <li> [] Componentes finalizados y comentados </li>
 [] Card <br>
 [✅] Footer <br>
-[] Header <br>
-[] Main <br>
+[✅] Header <br>
+[✅] Main <br>
 [] Navbar <br>
 [✅] Profile <br>
 [✅] Title <br>
@@ -95,5 +95,5 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Componentes separados <br>
 [] Código comentado <br>
 [✅] Data comentado y repasado <br>
-[] Repasar <br>
+[] Repasar app e index <br>
 </ol>
