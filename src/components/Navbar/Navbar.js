@@ -1,15 +1,16 @@
 import './Navbar.css';
 
+// Creamos el template para cada navegable de la barra
 function Navbar(item) {
   return `
       <li>
-        <a href=${item.href} class="nav_item">
+        <a href=${item.href} class="nav-item">
           <img
+            class="nav-image"
             src=${item.src}
             alt=${item.alt}
-            class="nav_image"
           />
-          <h2>${item.name}</h2>
+          <h2 class="nav-title">${item.name}</h2>
         </a>
       </li>`;
 }

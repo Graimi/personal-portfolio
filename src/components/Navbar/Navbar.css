@@ -4,80 +4,70 @@
   display: none;
 }
 
+/* Tamaño para el logo de la hamburguer  */
 .nav-hamburguer-label {
   width: var(--pf-img-mini);
 }
 
-/* Con esta propiedad fijamos los nav a la izquierda */
+/* Propiedades para la lista de navegables */
 .nav-list {
   display: flex;
   flex-direction: column;
+  /* Con esta propiedad fijamos los nav a la izquierda */
   padding: 0;
   gap: var(--pf-gap-list);
 }
 
-/* Distribuimos correctamente y espaciamos los nav */
-.nav_item {
+/* Distribuimos correctamente y espaciamos los nav gracias al flex*/
+.nav-item {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
-  /* padding-bottom: 25px; */
 }
 
 /* Damos tamaño a los logos */
-.nav_image {
+.nav-image {
   width: var(--pf-img-mini);
 }
 
 /* Damos espacio entre los logos y el texto */
-.nav_item h2 {
+.nav-title {
   padding-left: var(--pf-padding-list);
 }
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
-  .nav-hamburguer-label
-  /* .nav-hamburguer  */ {
+  /* Hacemos visible el icono del hamburguer */
+  .nav-hamburguer-label {
     display: block;
   }
 
-  /* Por defecto la nav no se ve */
+  /* Por defecto en esta query la lista nav no se ve */
   nav {
     display: none;
   }
 
-  /* CHECKED -> Aparece la nav */
+  /* Al hacer CHECK en la hamburguer -> Aparece la nav */
   .nav-hamburguer:checked + nav {
     display: flex;
-    padding: var(--bc__padding--big);
-  }
-
-  .nav-list {
-    padding: inherit
   }
 }
 
 /* MOBILE DISPLAY */
-/* Ver si replicar tal cual de tablet */
 @media screen and (max-width: 376px) {
-  .nav-hamburguer-label
-  /* .nav-hamburguer  */ {
+  /* Hacemos visible el icono del hamburguer */
+  .nav-hamburguer-label {
     display: block;
   }
 
-  /* Por defecto la nav no se ve */
+  /* Por defecto en esta query la lista nav no se ve */
   nav {
     display: none;
   }
 
-  /* CHECKED -> Aparece la nav */
+  /* Al hacer CHECK en la hamburguer -> Aparece la nav */
   .nav-hamburguer:checked + nav {
     display: flex;
-    padding: var(--bc__padding--big);
-  }
-
-  .nav-list {
-    padding: inherit
   }
 }

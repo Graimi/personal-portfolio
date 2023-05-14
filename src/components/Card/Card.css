@@ -10,15 +10,15 @@
 .card {
   /* Con eso mantenemos la visualización de la card */
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Es muy importante esta propiedad para que crezcan las cards */
   flex-grow: 1;
   /* Establecemos unas medidas que permitan una buena distribución del grow */
   width: 240px;
   max-width: 290px;
   height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   outline: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
   padding: 16px;

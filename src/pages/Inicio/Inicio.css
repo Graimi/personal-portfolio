@@ -15,13 +15,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  /* Es muy importante esta propiedad para que crezcan las cards */
   flex-grow: 1;
   width: 270px;
   max-width: 320px;
   height: auto;
   padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
-  outline: var(--pf-border-card-style);
+  border: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
 }
 
@@ -118,7 +119,7 @@
 
 /* Establecemos el width aquí para poder ordenar las img correctamente */
 .home-technologies-logos img {
-    width: var(--pf-img-mini);
+  width: var(--pf-img-mini);
 }
 
 /* Establecemos una separación entre los dos elementos acorde al gap de cards */
