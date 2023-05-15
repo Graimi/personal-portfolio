@@ -11,12 +11,13 @@
 .home-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   /* Es muy importante esta propiedad para que crezcan las cards */
   flex-grow: 1;
   /* Establecemos los tamaños de las cards */
-  width: 270px;
+  width: 280px;
   max-width: 320px;
+  height: min-content;
   padding: var(--pf-padding-card);
   background: var(--pf-color-beige);
   border: var(--pf-border-card-style);
