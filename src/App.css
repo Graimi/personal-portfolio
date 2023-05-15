@@ -20,6 +20,7 @@
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  /* Cambiamos la orientación de la app */
   .glass {
     flex-direction: column;
   }
@@ -32,6 +33,7 @@
 
 /* MOBILE DISPLAY */
 @media screen and (max-width: 376px) {
+  /* Cambiamos la orientación de la app */
   .glass {
     flex-direction: column;
   }

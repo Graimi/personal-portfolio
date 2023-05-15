@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import footerData from './data/Footer';
 
+// Creamos la función madre que cargará toda la app web
 function App() {
   // Obtenemos el elemento app
   const app = document.getElementById('app');
@@ -13,6 +14,7 @@ function App() {
   // evitando de esta manera que se colapse la app sumándose contenido
   app.innerHTML = Header();
   app.innerHTML += Main();
+  // Añadimos el nuevo footer al final de la app, este se cargará solo en tablet y mobile
   app.innerHTML += generateFooter(footerData);
 }
 

@@ -10,7 +10,6 @@ header {
   width: 300px;
   /* Estilamos el visual */
   padding: var(--pf-padding-container);
-  gap: var(--pf-gap-list);
   background: var(--pf-gradient-white);
   border-radius: var(--pf-radius-container);
 }
@@ -25,6 +24,7 @@ header .rrss {
   /* Adaptamos el contenido del header a toda su extensión */
   header {
     width: 100%;
+    gap: var(--pf-gap-flex);
   }
 
   /* Quitamos la visualización del footer del header */
@@ -38,6 +38,7 @@ header .rrss {
   /* Adaptamos el contenido del header a toda su extensión */
   header {
     width: 100%;
+    gap: var(--pf-gap-flex);
   }
 
   /* Quitamos la visualización del footer del header */
