@@ -59,9 +59,9 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Componentes <br>
 [✅] Pages <br>
 [✅] ¿Cambiar la cards de pages a la misma que proyectos? <br>
-[] root limpio <br>
-[] Propiedades de acuerdo al root <br>
-[] Medias queries <br>
+[✅] root limpio <br>
+[✅] Propiedades de acuerdo al root <br>
+[✅] Medias queries <br>
 
 <li> [✅] JAVASCRIPT </li>
 [✅] General <br>
@@ -84,10 +84,10 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Inicio <br>
 [✅] Proyectos <br>
 
-<li> [] General </li>
+<li> [✅] General </li>
 [✅] Carpetas organizadas <br>
 [✅] Componentes separados <br>
-[] Código comentado <br>
+[✅] Código comentado <br>
 [✅] Data comentado y repasado <br>
-[] Repasar app, main e index <br>
+[✅] Repasar app, main e index <br>
 </ol>
