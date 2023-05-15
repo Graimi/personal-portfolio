@@ -15,6 +15,20 @@
 
 /* TABLET DISPLAY */
 @media screen and (min-width: 376px) and (max-width: 768px) {
+  /* Centramos el contenedor del title para la vista de tablet*/
+  .title {
+    width: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Limitamos la decoración para hacerla más visual */
+  .title-decoration {
+    width: 90%;
+  }
+
   /* Reducimos el tamaño de la fuente para que no se exceda */
   .title-text {
     font-size: calc(var(--pf-typography-h1) - 5px);
