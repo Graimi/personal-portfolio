@@ -16,9 +16,9 @@
   /* Es muy importante esta propiedad para que crezcan las cards */
   flex-grow: 1;
   /* Establecemos unas medidas que permitan ver todo el contenido */
-  width: 210px;
-  max-width: 260px;
-  height: 350px;
+  width: 215px;
+  max-width: 250px;
+  min-height: 350px;
   outline: var(--pf-border-card-style);
   border-radius: var(--pf-radius-card);
   /* En base al display de ambas caras, este padding será el que se aplique al back */
@@ -41,6 +41,7 @@
   width: 100%;
   height: 100%;
   padding: var(--pf-padding-card);
+  gap: var(--pf-gap-card);
   /* Establecemos el efecto */
   transition: transform 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
