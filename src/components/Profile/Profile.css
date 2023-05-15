@@ -10,6 +10,7 @@
 .profile-img {
   width: 100px;
   border-radius: 50px;
+  border: 2px solid var(--pf-color-brown-light)
 }
 
 /* Damos un énfasis menor a los apellidos */
