@@ -54,7 +54,7 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [] Metadatos <br>
 [✅] Código redactado en JS <br>
 
-<li> [] CSS </li>
+<li> [✅] CSS </li>
 [✅] General <br>
 [✅] Componentes <br>
 [✅] Pages <br>
@@ -90,4 +90,5 @@ Tendrás este evento añadido a los elementos de tipo `a` los cuales tendrán tr
 [✅] Código comentado <br>
 [✅] Data comentado y repasado <br>
 [✅] Repasar app, main e index <br>
+[] README final <br>
 </ol>
