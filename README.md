@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-## PROYECTO 3: PORTFOLIO
+## PROYECTO 3: PORTFOLIO - FINALIZADO
 ## Descripción
 En este proyecto te vamos a pedir que apliques todo lo aprendido hasta ahora, incluyendo el uso de Vite como herramienta de desarrollo. Vas a crear tu propio portfolio, y simularás la navegación en una SPA (SIngle Page Application), es decir, simularás que puedes cambiar la ruta de proyecto para mostrar diferente contenido según el usuario haga click en un link de navegación.
 ## <a href="https://portfolio-jaime-flores.netlify.app/">- ENLACE DE VISUALIZACIÓN </a>
@@ -9,9 +9,9 @@ En este proyecto te vamos a pedir que apliques todo lo aprendido hasta ahora, in
 
 ## Requerimentos
 <ul>
-<li> [] CRITERIOS GENERALES</li>
+<li> [✅] CRITERIOS GENERALES</li>
 [✅] En este proyecto te vamos a pedir que apliques todo lo aprendido hasta ahora, incluyendo el uso de Vite como herramienta de desarrollo. Vas a crear tu propio portfolio, y simularás la navegación en una SPA (SIngle Page Application), es decir, simularás que puedes cambiar la ruta de proyecto para mostrar diferente contenido según el usuario haga click en un link de navegación. <br>
-[] En este proyecto comenzarás creando una barra de navegación donde prefieras (arriba o a la izquierda de la pantalla), donde tendrás al menos tres links a diferentes. A estos links les añadirás un evento mediante JavaScript de forma que cuando ocurra el evento `click` se lance esta función:
+[✅] En este proyecto comenzarás creando una barra de navegación donde prefieras (arriba o a la izquierda de la pantalla), donde tendrás al menos tres links a diferentes. A estos links les añadirás un evento mediante JavaScript de forma que cuando ocurra el evento `click` se lance esta función:
 
 ```jsx
 // Lee los comentarios de este código para entender lo que hace 🔴
