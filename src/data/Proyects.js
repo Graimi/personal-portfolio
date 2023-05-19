@@ -74,7 +74,7 @@ const proyectsData = [
     imgRepo:
       'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118881/Portfolio/github_ejpjmn.png',
     linkRepo: 'https://github.com/Graimi/proyecto-3-portfolio',
-    linkdeploy: 'https://graimi.netlify.app/',
+    linkdeploy: 'https://portfolio-jaime-flores.netlify.app/',
     technologies: [
       {
         technology: 'HTML',
