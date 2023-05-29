@@ -20,6 +20,10 @@ export const basicData = [
   {
     technology: 'C#',
     img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683643457/logos/Csharp_mtomfu.png'
+  },
+  {
+    technology: 'Vitest',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1685370145/logos/vitest_obui31.svg'
   }
 ];
 
