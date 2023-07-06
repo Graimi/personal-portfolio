@@ -8,6 +8,7 @@
 //     imgRepo:
 //       'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118881/Portfolio/github_ejpjmn.png',
 //     linkRepo: '',
+//     linkdeploy: '',
 //     technologies: [
 //       {
 //         technology: '',
@@ -22,6 +23,52 @@
 
 // Recogemos los datos relativos a las proyectos realizados
 const proyectsData = [
+  {
+    proyect: 'App del tiempo',
+    img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1688656767/Portfolio/Captura_de_pantalla_2023-07-06_171800_prduln.png',
+    description:
+      'Crear una aplicación del tiempo que permita la visualización en tiempo real de la información meteorológica como la previsión de la misma a 5 días',
+    origin: 'Proyecto Rock{theCode}',
+    repo: 'Github',
+    imgRepo:
+      'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683118881/Portfolio/github_ejpjmn.png',
+    linkRepo: 'https://github.com/Graimi/proyecto-5-app-del-tiempo',
+    linkdeploy: 'https://app-tiempo.netlify.app/',
+    technologies: [
+      {
+        technology: 'HTML',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/html_jhpxjv.png'
+      },
+      {
+        technology: 'CSS',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/css_zxaqym.png'
+      },
+      {
+        technology: 'JAVASCRIPT',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/js_wgrovv.png'
+      },
+      {
+        technology: 'REACT',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/react_gwx0m7.svg'
+      },
+      {
+        technology: 'PRETTIER',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/prettier_kjswv5.svg'
+      },
+      {
+        technology: 'ESLINT',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/eslint_y29ea5.svg'
+      },
+      {
+        technology: 'VITE',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362632/logos/vite_pv5xkq.svg'
+      },
+      {
+        technology: 'NETLIFY',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683639756/logos/netlify_pyg9aa.png'
+      }
+    ]
+  },
   {
     proyect: 'App NASA',
     img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683122102/Portfolio/nasa_fx2byf.jpg',
@@ -41,6 +88,10 @@ const proyectsData = [
       {
         technology: 'CSS',
         img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/css_zxaqym.png'
+      },
+      {
+        technology: 'JAVASCRIPT',
+        img: 'https://res.cloudinary.com/dwsffp1eq/image/upload/v1683362634/logos/js_wgrovv.png'
       },
       {
         technology: 'REACT',
